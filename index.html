@@ -205,13 +205,26 @@ blockquote .name {
 }
 
 @media print {
-    body { font-size:0.6em; }
+    body { font-size: 0.6em; }
     .address { display: inline-block; }
     .profile { font-size: 1em; display: inline-block; }
-    #profiles .contact-header, #languages, #interests, .company-logo { display: none; }
+
+    /* This line now correctly keeps logos hidden in the header but shows them elsewhere */
+    #profiles .contact-header, #languages, #interests { display: none; }
+
+    /* This rule hides the download button */
+    .download-btn { display: none !important; }
+
+    /* It makes the company logos smaller only for printing */
+    .company-logo {
+        max-width: 60px !important;
+        max-height: 40px !important;
+        margin-left: 15px !important;
+    }
+
     .skills { page-break-inside: avoid; }
-    .main{
-        padding:10px;
+    .main {
+        padding: 10px;
         margin-left: 2%;
         margin-right: 2%;
     }
@@ -222,6 +235,29 @@ blockquote .name {
         margin: 25mm 10mm;
     }
 }
+
+.download-btn {
+    display: block; /* Makes it take its own line */
+    margin: 25px auto; /* Centers the button horizontally */
+    background-color: #333;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-family: &#x27;Montserrat&#x27;, sans-serif;
+    font-size: 0.9em;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+}
+
+.download-btn:hover {
+    background-color: #555;
+}
+
+.download-btn .fa {
+    font-size: 1em;
+    margin-right: 8px;
+}
     </style>
 	<script src= "https://cdnjs.cloudflare.com/ajax/libs/respond.js/1.4.2/respond.min.js"></script>
 	</head>
@@ -230,6 +266,10 @@ blockquote .name {
 				<h1>Nicolas Dréno</h1>
 				<h3 class= "label">Solution Architect</h3>
 		
+		
+				<button onclick="window.print()" class="download-btn">
+		        	<i class="fa fa-download"></i> Download as PDF
+		   		</button>
 		
 				<div id= "contact">
 					<span class= "contact-header">
