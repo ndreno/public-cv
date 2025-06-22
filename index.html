@@ -280,6 +280,26 @@ blockquote .name {
     font-size: 1em;
     margin-right: 8px;
 }
+
+.education-item .meta {
+    font-size: 0.9em;
+    font-style: italic;
+    color: #555; /* A slightly lighter color */
+    margin-top: -5px; /* Pull it closer to the heading above */
+}
+
+.education-item .gpa {
+    margin-left: 15px;
+}
+
+.education-item .courses-title {
+    margin-bottom: 5px;
+    margin-top: 10px;
+}
+
+.education-item {
+    margin-bottom: 20px; /* Add space between education entries */
+}
     </style>
 	<script src= "https://cdnjs.cloudflare.com/ajax/libs/respond.js/1.4.2/respond.min.js"></script>
 	</head>
@@ -555,17 +575,28 @@ blockquote .name {
 			    </div>
 			</section>
 			<section id="education">
-				<h2><i class="fa fa-graduation-cap left"></i> EDUCATION</h2>
-				<h3>Master&#x27;s Degree, Network Infrastructure and Software Engineering - ENSEIRB-MATMECA</h3>
-				<h4>  
-				</h4>
-			 	<h3>Bachelor&#x27;s Degree, Computer Sciences - Lycée Jules Ferry Versailles</h3>
-				<h4>  
-				</h4>
-			 	<h3>Technological Degree, Electronic and Industrial Software - Technological University Ville d&#x27;Avray</h3>
-				<h4>  
-				</h4>
-			 
+			    <h2><i class="fa fa-graduation-cap left"></i> EDUCATION</h2>
+			    <div class="education-item">
+			        <h3>Master&#x27;s Degree, Network Infrastructure and Software Engineering</h3>
+			        <h4>ENSEIRB-MATMECA</h4>
+			        <div class="meta">
+			            <span></span>
+			        </div>
+			    </div>
+			    <div class="education-item">
+			        <h3>Bachelor&#x27;s Degree, Computer Sciences</h3>
+			        <h4>Lycée Jules Ferry Versailles</h4>
+			        <div class="meta">
+			            <span></span>
+			        </div>
+			    </div>
+			    <div class="education-item">
+			        <h3>Technological Degree, Electronic and Industrial Software</h3>
+			        <h4>Technological University Ville d&#x27;Avray</h4>
+			        <div class="meta">
+			            <span></span>
+			        </div>
+			    </div>
 			</section>
 			<section id="languages">
 				<h2><i class="fa fa-language left"></i> LANGUAGES</h2>
@@ -586,29 +617,33 @@ blockquote .name {
 			</section>
 			<section id="references">
 				<h2><i class="fa fa-thumbs-up left"></i> REFERENCES</h2>
-				<blockquote>
-					<p>"Nico slotted in well to our Solutions Architecture team and quickly made a difference. Nico is a talented, highly-skilled technologist who will add value to any work environment."</p>
-					<footer>— From Tim Chaffe, Chief IT &amp; Digital Architect, University of Auckland</footer>
+				<blockquote class="reference-item">
+					Nico slotted in well to our Solutions Architecture team and quickly made a difference. Nico is a talented, highly-skilled technologist who will add value to any work environment.
+					<div class="name"><br>- From Tim Chaffe, Chief IT &amp; Digital Architect, University of Auckland</div>
 				</blockquote>
-				<blockquote>
-					<p>"I had the opportunity and the chance to work with Nicolas on the transformation and agility of the system and he very concretely helped me to translate our master plan into concrete projects (API / DATA / DevSecOps). He was also a true evangelist of agile development of applications with high business value. It is very valuable to work with a person like Nicolas who combines Soft Skills and Hard Skills with real pragmatism when it comes to execution."</p>
-					<footer>— From Ibrahima Ndiaye, Head of Architecture, ENGIE B2C</footer>
+				<blockquote class="reference-item">
+					 Nicolas Dreno has been an employee of The Warehouse Group since May 2021. He has been a pleasure to work with, bringing his attention to detail and passion to everything he has been involved in. He has been crucial with the implementation of our Master Data Management platform, evolution of our real-time event streaming platform (Confluent Kafka), decoupling internal and external APIs using cloud API management (Azure and AWS), growth and education in our data governance areas, skills uplift in data modelling and DevOps automation (to name a few). His communication and people skills are excellent, and he has been a trusted leader in architecture, software engineering and data management. I can highly recommend Nicolas for any technical architecture or engineering related roles as he is incredibly intelligent and capable in all technical areas I have worked with him on. He is very well respected here at TWG across all levels of management and teams and will be dearly missed. We wish him the best in his future endeavors and hope that someday our paths will cross again.
+					<div class="name"><br>- From Jon Sandberg, Domain Chapter Lead, TWG</div>
 				</blockquote>
-				<blockquote>
-					<p>"I worked with Nico for a year in challenging master data managment solutions. I was impressed by Nico ability to come up to speed quickly. He shaped and upskilled the integration team, managed them to deliver high quality and sustainable solution while being the early adaptor of new technology and processes. Nico is quality oriented professional, pragmatic in his thinking, hands-on manager, trusted and respected by senior stakeholders and the team members. I strongly recommend Nico for complex integration architecture."</p>
-					<footer>— From Tarek Ahmed, Project Manager, TWG</footer>
+				<blockquote class="reference-item">
+					I had the opportunity and the chance to work with Nicolas on the transformation and agility of the system and he very concretely helped me to translate our master plan into concrete projects (API / DATA / DevSecOps). He was also a true evangelist of agile development of applications with high business value. It is very valuable to work with a person like Nicolas who combines Soft Skills and Hard Skills with real pragmatism when it comes to execution.
+					<div class="name"><br>- From Ibrahima Ndiaye, Head of Architecture, ENGIE B2C</div>
 				</blockquote>
-				<blockquote>
-					<p>"Nicolas led the Scrum development team that built the CPF. He was the driving force behind the implementation of Scrum and its values within the Agile team, which was a huge challenge in the context of Informatique CDC."</p>
-					<footer>— From Olivier Ledru, Agile Coach, Caisse Des Dépôts et Consignations</footer>
+				<blockquote class="reference-item">
+					I was lucky to hire Nicolas Dreno in 2018 as a Digital Solutions Architect. Building a new team of architects from the ground up, I went far and wide for architects who are customer obsessed, outcome focussed and at the same time have deep interest in engineering and technology to solve all kinds of business challenges. And we had lots of them during that time. Nicolas fit the bill almost perfectly. Nicolas had this insatiable desire to learn and experiment, then use it to build internal capabilities by converting learnings into documented and agreed patterns for delivery teams and other Solution Architects to easily consume. I deeply shared his dislike for mixing buzzwords in discussions. Instead he stayed focussed on solving some of the most pressing challenges that he took on, like setting up integration platforms in AWS cloud, creating secure API ecosystem and Data hub, to name a few. Sorry to see you go, real loss for us here in Aotearoa!
+					<div class="name"><br>- From Ratan Kumar, Head of Architecture, University of Auckland</div>
 				</blockquote>
-				<blockquote>
-					<p>"I was lucky to hire Nicolas Dreno in 2018 as a Digital Solutions Architect. Building a new team of architects from the ground up, I went far and wide for architects who are customer obsessed, outcome focussed and at the same time have deep interest in engineering and technology to solve all kinds of business challenges. And we had lots of them during that time. Nicolas fit the bill almost perfectly. Nicolas had this insatiable desire to learn and experiment, then use it to build internal capabilities by converting learnings into documented and agreed patterns for delivery teams and other Solution Architects to easily consume. I deeply shared his dislike for mixing buzzwords in discussions. Instead he stayed focussed on solving some of the most pressing challenges that he took on, like setting up integration platforms in AWS cloud, creating secure API ecosystem and Data hub, to name a few. Sorry to see you go, real loss for us here in Aotearoa!"</p>
-					<footer>— From Ratan Kumar, Head of Architecture, University of Auckland</footer>
+				<blockquote class="reference-item">
+					I worked with Nico for a year in challenging master data managment solutions. I was impressed by Nico ability to come up to speed quickly. He shaped and upskilled the integration team, managed them to deliver high quality and sustainable solution while being the early adaptor of new technology and processes. Nico is quality oriented professional, pragmatic in his thinking, hands-on manager, trusted and respected by senior stakeholders and the team members. I strongly recommend Nico for complex integration architecture.
+					<div class="name"><br>- From Tarek Ahmed, Project Manager, TWG</div>
 				</blockquote>
-				<blockquote>
-					<p>"Nicolas Dreno worked in my team from January 2012 to March 2016, when he resigned on very good terms from ICDC for family reasons. At the time, I was responsible for the Program Management team, overseeing major strategic projects. Highly knowledgeable about new technology practices, Nicolas generally positioned himself as a leader, sharing and explaining his ideas. Throughout his career at ICDC, Nicolas did not hesitate to seize opportunities to advance at all levels (functional, technical, methodological, interpersonal, etc.), even if this meant structural changes. The results were particularly visible in the CPF project for the Ministry of Labor, where he quickly established himself as a pillar of the team. Since then, he has not hesitated to promote innovative practices for the benefit of projects and, more broadly, the company. This was particularly the case for the development and implementation of B2B and trust solutions with external partners (web services, identity federation, France Connect, etc.). With a strong lean mindset and keen to work more efficiently, Nicolas had no trouble evolving in an agile environment, seeking continuous improvement to identify new methods and tools and introduce them to those around him. Nicolas left ICDC with significant architectural expertise, making him a technical expert on numerous topics. Since then, I have had several opportunities to discuss his career path and career plans with Nicolas. I recommend Nicolas for any IT design position as a technical and functional architect, without any doubt regarding his ability to adapt to any new context."</p>
-					<footer>— From Hélène Piquer, Department Manager, Ministry of Labor (ICDC)</footer>
+				<blockquote class="reference-item">
+					Nicolas Dreno worked in my team from January 2012 to March 2016, when he resigned on very good terms from ICDC for family reasons. At the time, I was responsible for the Program Management team, overseeing major strategic projects. Highly knowledgeable about new technology practices, Nicolas generally positioned himself as a leader, sharing and explaining his ideas. Throughout his career at ICDC, Nicolas did not hesitate to seize opportunities to advance at all levels (functional, technical, methodological, interpersonal, etc.), even if this meant structural changes. The results were particularly visible in the CPF project for the Ministry of Labor, where he quickly established himself as a pillar of the team. Since then, he has not hesitated to promote innovative practices for the benefit of projects and, more broadly, the company. This was particularly the case for the development and implementation of B2B and trust solutions with external partners (web services, identity federation, France Connect, etc.). With a strong lean mindset and keen to work more efficiently, Nicolas had no trouble evolving in an agile environment, seeking continuous improvement to identify new methods and tools and introduce them to those around him. Nicolas left ICDC with significant architectural expertise, making him a technical expert on numerous topics. Since then, I have had several opportunities to discuss his career path and career plans with Nicolas. I recommend Nicolas for any IT design position as a technical and functional architect, without any doubt regarding his ability to adapt to any new context.
+					<div class="name"><br>- From Hélène Piquer, Department Manager, Ministry of Labor (ICDC)</div>
+				</blockquote>
+				<blockquote class="reference-item">
+					Nicolas led the Scrum development team that built the CPF. He was the driving force behind the implementation of Scrum and its values within the Agile team, which was a huge challenge in the context of Informatique CDC.
+					<div class="name"><br>- From Olivier Ledru, Agile Coach, Caisse Des Dépôts et Consignations</div>
 				</blockquote>
 			</section>
 		</div>
