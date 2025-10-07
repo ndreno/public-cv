@@ -1,0 +1,34 @@
+{
+  "name": "jsonresume-theme-cora",
+  "version": "0.2.0",
+  "description": "An uber-classy JSONResume theme, that is print friendly too!",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Marco Pagliari",
+  "license": "MIT",
+  "dependencies": {
+    "dateformat": "^5.0.3",
+    "handlebars": "^4.7.7",
+    "lodash": "^4.17.21",
+    "npm": "^9.1.2",
+    "resume-schema": "1.0.0",
+    "tarball-extract": "^0.0.3"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/lechuckcaptain/jsonresume-theme-cora.git"
+  },
+  "keywords": [
+    "json",
+    "jsonresume",
+    "theme",
+    "classy",
+    "jsonresume-theme"
+  ],
+  "bugs": {
+    "url": "https://github.com/lechuckcaptain/jsonresume-theme-cora.git/issues"
+  },
+  "homepage": "https://github.com/lechuckcaptain/jsonresume-theme-cora.git"
+}

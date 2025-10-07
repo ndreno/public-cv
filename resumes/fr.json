@@ -1,0 +1,389 @@
+{
+    "basics": {
+        "name": "Nicolas Dréno",
+        "label": "Architecte Solutions",
+        "email": "ndreno@gmail.com",
+        "location": {
+            "postalCode": "73100",
+            "city": "Aix-les-Bains",
+            "region": "Auvergne-Rhône-Alpes",
+            "country": "France",
+            "countryCode": "FR"
+        },
+        "profiles": [
+            {
+                "network": "LinkedIn",
+                "username": "nicolasdreno",
+                "url": "https://www.linkedin.com/in/nicolasdreno"
+            }
+        ],
+        "summary": "Architecte logiciel expérimenté, guidé par la conviction que la simplicité est la sophistication ultime. Spécialisé dans la modernisation et la rationalisation de systèmes d'information complexes vers des architectures distribuées, sécurisées et maintenables. Passionné par la cohérence technique, la standardisation des pratiques et la collaboration interdomaines. Habitué à accompagner les équipes dans la définition de socles techniques, la gouvernance d'API et la mise en œuvre de solutions pérennes alignées sur les exigences métiers et de sécurité."
+    },
+    "work": [
+        {
+            "company": "NumSpot",
+            "position": "Architecte logiciel & DevOps",
+            "location": "France",
+            "logo": "./logos/numspot_logo.jpeg",
+            "startDate": "2023-11",
+            "summary": "Conception d'un socle technique unifié pour un fournisseur européen de cloud souverain, garantissant la cohérence, la sécurité et la pérennité des architectures. Responsable des stratégies d'architecture et d'innovation autour des services cloud natifs et de la gouvernance des API.",
+            "highlights": [
+                "Définition d'une architecture cible modulaire et sécurisée pour des services cloud natifs et des offres PaaS (rédaction HLD/LLDs).",
+                "Conception et mise en œuvre d'architectures pérennes et évolutives pour la gestion et la standardisation des API.",
+                "Accompagnement des équipes dans l'application des bonnes pratiques d'architecture, de sécurité et d'automatisation.",
+                "Animation d'un cadre de gouvernance technique et définition des socles communs au sein du SI.",
+                "Promotion des technologies open source et alignement avec les standards de sécurité (SecNumCloud).",
+                "Participation à la qualification de conformité et à la définition des politiques techniques du cloud souverain."
+            ],
+            "technologies": [
+                "Golang",
+                "Kubernetes",
+                "OAS",
+                "Scalar",
+                "pb33f",
+                "Terraform",
+                "DrawIO",
+                "Docusaurus"
+            ]
+        },
+        {
+            "company": "Back Market",
+            "position": "Architecte API Senior",
+            "location": "France",
+            "logo": "./logos/back_market_logo.jpeg",
+            "startDate": "2022-09",
+            "endDate": "2023-11",
+            "summary": "Définition de la stratégie API, de l'architecture et des bonnes pratiques communautaires pour une plateforme e-commerce en forte croissance, en pilotant des initiatives API-first et la modernisation de l'écosystème technique.",
+            "highlights": [
+                "Définition et évangélisation de la vision API transversale, animation d'un API Chapter, rédaction de guides dans Backstage et accompagnement des équipes sur les principes DDD et API-first.",
+                "Conception d'une stratégie API à trois couches (Experience, Composite, Domain) et d'architectures orientées événements (CQRS, SAGA).",
+                "Pilotage des POC de solutions d'API Gateway (KrakenD) et modernisation des communications interservices.",
+                "Communication technique claire et adaptée aux différents interlocuteurs (développeurs, responsables sécurité, métiers)",
+                "Refonte du modèle d'autorisation de la plateforme à l'aide d'Open Policy Agent (OPA), avec mise en place des points d'application et de décision de policies."
+            ],
+            "technologies": [
+                "AWS",
+                "GCP",
+                "Python",
+                "NodeJs",
+                "Github",
+                "KrakendD",
+                "Spotlight",
+                "Backstage",
+                "Docker",
+                "Excalidraw",
+                "Jira"
+            ]
+        },
+        {
+            "company": "The Warehouse Group",
+            "position": "Architecte Solutions",
+            "location": "Auckland, Nouvelle-Zélande",
+            "logo": "./logos/the_warehouse_group_logo.jpeg",
+            "startDate": "2021-05",
+            "endDate": "2022-06",
+            "summary": "Conception de solutions d'intégration et de streaming à grande échelle, modernisation de la gestion des API et pilotage d'initiatives DevOps pour un grand groupe de distribution.",
+            "highlights": [
+                "Conception et mise en œuvre de la solution d'intégration principale pour une nouvelle plateforme de gestion des données de référence, avec Confluent Kafka, Azure Kubernetes Service (AKS) et des microservices Spring Boot.",
+                "Amélioration de la plateforme de gestion des API avec Azure APIM, intégrant OAuth2.0, OpenAPI et une gouvernance stricte des schémas JSON.",
+                "Promotion d'une architecture découplée et orientée streaming basée sur Confluent Cloud Kafka et les principes d'Infrastructure as Code.",
+                "Diffusion des bonnes pratiques DevOps via la mise en place de pipelines CI/CD et la contribution à une plateforme développeur type 'Golden Path' inspirée de Backstage."
+            ],
+            "technologies": [
+                "Java",
+                "JavaScript",
+                "Azure",
+                "Swagger",
+                "Backstage",
+                "Atlassian",
+                "Json-schema"
+            ]
+        },
+        {
+            "company": "Qard",
+            "position": "Directeur Technique (Head of Engineering)",
+            "location": "Paris, France",
+            "logo": "./logos/qard_logo.jpeg",
+            "startDate": "2021-02",
+            "summary": "Encadrement des équipes, mentorat et définition de la stratégie technologique pour une fintech innovante, au service de la transformation du financement digital.",
+            "highlights": [
+                "Direction de l'équipe d'ingénierie pour concevoir et livrer des solutions financières innovantes.",
+                "Spécialisation dans le développement d'API évolutives et l'architecture de systèmes robustes, performants et sécurisés.",
+                "Pilotage de la stratégie technique, intégration des systèmes et livraison de produits financiers de nouvelle génération."
+            ],
+            "technologies": [
+                "PHP",
+                "AWS",
+                "GCP",
+                "S3",
+                "Notion",
+                "Gitlab"
+            ]
+        },
+        {
+            "company": "University of Auckland",
+            "position": "Architecte Solutions Digitales",
+            "location": "Auckland, Nouvelle-Zélande",
+            "logo": "./logos/the_university_of_auckland_logo.jpeg",
+            "startDate": "2018-10",
+            "endDate": "2021-05",
+            "summary": "Modernisation des plateformes numériques et des solutions d'intégration pour la principale université de Nouvelle-Zélande, en s'appuyant sur les technologies cloud natives et l'analyse de données avancée.",
+            "highlights": [
+                "Conception d'un Data Hub temps réel sur AWS (Kafka, Elasticsearch, ECS, Fargate) pour centraliser les données de l'université.",
+                "Refonte de la plateforme de diffusion vidéo pour 85+ pétaoctets de contenu via AWS S3, CloudFront et Lambda.",
+                "Modernisation de la plateforme IAM avec AWS Cognito (OAuth2.0/OIDC) et rénovation de la couche de gestion d'API avec Kong Enterprise.",
+                "Mise en place de modèles 'Integration By Convention' basés sur Kafka et des fonctions serverless, réduisant la dépendance aux ESB traditionnels."
+            ]
+        },
+        {
+            "company": "ENGIE B2C",
+            "position": "Architecte Digital",
+            "location": "Paris, France",
+            "logo": "./logos/engie_logo.jpeg",
+            "startDate": "2016-03",
+            "endDate": "2018-10",
+            "summary": "Conception et pilotage des architectures digitales orientées clients, accompagnant la transformation cloud et l'innovation d'un grand groupe énergétique.",
+            "highlights": [
+                "Conception d'architectures cloud natives pour les plateformes B2C, applications mobiles et intégrations IoT sur AWS.",
+                "Pilotage d'évaluations techniques et de POC pour la gestion d'API (Kong, Gravitee, Tyk) et les plateformes de données modernes (Kafka, CockroachDB).",
+                "Promotion de la culture DevOps via la création d'une 'CI/CD Factory' basée sur Jenkins, Docker, Rancher et Ansible.",
+                "Rôle d'animateur agile, promouvant Scrum, TDD/BDD et les principes de Domain-Driven Design."
+            ]
+        },
+        {
+            "company": "Ministère du Travail",
+            "position": "Architecte Logiciel et Scrum Master",
+            "location": "Bordeaux, France",
+            "logo": "./logos/informatique_cdc_logo.jpeg",
+            "startDate": "2014-03",
+            "endDate": "2016-03",
+            "summary": "Conception et mise en œuvre d'une plateforme nationale de formation (CPF) pour 42 millions d'utilisateurs, tout en modernisant les systèmes existants.",
+            "highlights": [
+                "Urbanisation du SI autour d'une architecture REST composée de plus de 10 applications.",
+                "Implémentation de composants techniques clés, dont Spring Batch, et d'une plateforme IAM basée sur OpenAM et OpenDJ.",
+                "Encadrement des processus agiles en tant que Scrum Master, avec mise en place d'une chaîne CI/CD complète (Jenkins, Maven, SonarQube, Jira).",
+                "Accompagnement du Product Owner dans la planification et la gestion des ressources internes et externes."
+            ]
+        },
+        {
+            "company": "Caisse des Dépôts et Consignations",
+            "position": "Ingénieur Logiciel",
+            "location": "Bordeaux, France",
+            "logo": "./logos/informatique_cdc_logo.jpeg",
+            "startDate": "2009-09",
+            "endDate": "2014-03",
+            "summary": "Développement et maintenance d'applications pour la principale institution financière publique française, avec un focus sur la performance, l'IHM et l'architecture SOA.",
+            "highlights": [
+                "Développement d'applications JavaScript et d'interfaces utilisateur (JSP, HTML, CSS).",
+                "Mise en place d'une architecture SOA via JAX-WS et SoapUI pour les services SOAP.",
+                "Suivi de la qualité du code avec SonarQube et résolution d'incidents de performance en production."
+            ]
+        },
+        {
+            "company": "Restopolitan",
+            "position": "Stagiaire Informatique",
+            "location": "Paris, France",
+            "logo": "./logos/restopolitan_logo.jpeg",
+            "startDate": "2008-04",
+            "endDate": "2008-09",
+            "summary": "Support technique et maintenance pour une startup spécialisée dans la gestion de réservations de restaurants.",
+            "highlights": [
+                "Maintenance et installation de systèmes informatiques.",
+                "Support aux logiciels internes de gestion des réservations."
+            ]
+        }
+    ],
+    "education": [
+        {
+            "institution": "ENSEIRB-MATMECA",
+            "area": "Infrastructures Réseaux et Génie Logiciel",
+            "studyType": "Diplôme d'Ingénieur"
+        },
+        {
+            "institution": "Lycée Jules Ferry Versailles",
+            "area": "Sciences Informatiques",
+            "studyType": "Baccalauréat"
+        },
+        {
+            "institution": "IUT de Ville d'Avray",
+            "area": "Électronique et Informatique Industrielle",
+            "studyType": "DUT"
+        }
+    ],
+    "skills": [
+        {
+            "name": "Architecture Logicielle",
+            "keywords": [
+                "Architecture orientée services (SOA / microservices)",
+                "Urbanisation du SI",
+                "Architecture data et gouvernance de la donnée",
+                "API design & bus de messages",
+                "Conception orientée objet",
+                "Sécurité et conformité (PSSI, ISO, SecNumCloud, DevSecOps)",
+                "Scalabilité (FinOps) et maintenabilité applicative"
+            ]
+        },
+        {
+            "name": "Cloud & DevOps",
+            "keywords": [
+                "AWS (ECS, Fargate, Lambda, S3, CloudFront, Cognito, Kafka, Kinesis, Elasticsearch)",
+                "Azure (AKS, APIM)",
+                "GCP",
+                "Outscale",
+                "Docker",
+                "Kubernetes",
+                "Terraform",
+                "Ansible",
+                "Jenkins",
+                "Git",
+                "Gitlab CI",
+                "CI/CD",
+                "Infrastructure as Code (Terraform)"
+            ]
+        },
+        {
+            "name": "API & Intégration",
+            "keywords": [
+                "Conception d'API (REST, OpenAPI, Swagger)",
+                "Gestion d'API (Kong, KrakenD, Azure APIM, Gravitee, Tyk)",
+                "Architecture orientée événements",
+                "Apache Kafka",
+                "Confluent Cloud",
+                "RabbitMQ",
+                "CQRS",
+                "Event Sourcing",
+                "SOA (SOAP, JAX-WS)"
+            ]
+        },
+        {
+            "name": "Programmation & Frameworks",
+            "keywords": [
+                "Java",
+                "Golang",
+                "Node.js",
+                "JavaScript",
+                "Spring (Boot, Core, MVC, Security, Batch)",
+                "Python (bases)",
+                "Shell/Bash",
+                "JSON Schema",
+                "OpenAPI Specification (OAS)"
+            ]
+        },
+        {
+            "name": "Gestion des Identités et Accès (IAM)",
+            "keywords": [
+                "OAuth2.0",
+                "OpenID Connect (OIDC)",
+                "SAML",
+                "LDAP",
+                "Open Policy Agent (OPA)",
+                "OpenAM/OpenDJ"
+            ]
+        },
+        {
+            "name": "Bases de Données",
+            "keywords": [
+                "SQL (MySQL, PostgreSQL, MariaDB, Oracle)",
+                "NoSQL (MongoDB, DynamoDB, Elasticsearch)",
+                "NewSQL (CockroachDB, ArangoDB)",
+                "Graph (MemGraph)"
+            ]
+        },
+        {
+            "name": "Méthodologies & Outils",
+            "keywords": [
+                "Agile (Scrum, Kanban)",
+                "Domain-Driven Design (DDD)",
+                "Architecture d'entreprise (TOGAF, C4 Model)",
+                "Jira",
+                "Backstage",
+                "Stoplight",
+                "SonarQube",
+                "Enterprise Architect",
+                "Draw.io",
+                "Archimate"
+            ]
+        }
+    ],
+    "languages": [
+        {
+            "language": "🇫🇷 Français",
+            "level": "Langue maternelle"
+        },
+        {
+            "language": "🇬🇧 Anglais",
+            "level": "Courant"
+        }
+    ],
+    "certifications": [
+        {
+            "title": "AWS Solution Architect - Associate",
+            "date": "2021",
+            "awarder": "Amazon Web Services"
+        },
+        {
+            "title": "Professional Scrum Developer",
+            "date": "2019",
+            "awarder": "Scrum.org"
+        },
+        {
+            "title": "Certificat de Premiers Secours",
+            "date": "2015",
+            "awarder": "Croix-Rouge Française"
+        }
+    ],
+    "interests": [
+        {
+            "name": "Bricolage, fabrication et brassage maison"
+        },
+        {
+            "name": "Squash et tennis de table"
+        },
+        {
+            "name": "Randonnée et trekking"
+        },
+        {
+            "name": "Dégustation de vins et gastronomie"
+        },
+        {
+            "name": "Festivals de musique et cinéma"
+        }
+    ],
+    "references": [
+        {
+            "name": "Tim Chaffe, Architecte en Chef IT & Digital",
+            "company": "University of Auckland",
+            "text": "Nico s'est très bien intégré à notre équipe d'Architecture de Solutions et a rapidement fait la différence. Nico est un technologue talentueux et hautement qualifié qui apportera de la valeur à tout environnement de travail."
+        },
+        {
+            "name": "Jon Sandberg, Domain Chapter Lead",
+            "company": "TWG",
+            "text": "Nicolas Dreno est un employé de The Warehouse Group depuis mai 2021. Ce fut un plaisir de travailler avec lui, apportant son souci du détail et sa passion à tout ce dans quoi il s'est impliqué. Il a été crucial dans la mise en œuvre de notre plateforme de gestion des données de référence (MDM), l'évolution de notre plateforme de streaming d'événements en temps réel (Confluent Kafka), le découplage des API internes et externes à l'aide de la gestion d'API cloud (Azure et AWS), la croissance et l'éducation dans nos domaines de gouvernance des données, l'amélioration des compétences en modélisation des données et en automatisation DevOps (pour n'en citer que quelques-uns). Ses compétences en communication et relationnelles sont excellentes, et il a été un leader de confiance en architecture, en ingénierie logicielle et en gestion des données. Je peux fortement recommander Nicolas pour tout rôle lié à l'architecture technique ou à l'ingénierie car il est incroyablement intelligent et compétent dans tous les domaines techniques sur lesquels j'ai travaillé avec lui. Il est très respecté ici chez TWG à tous les niveaux de direction et au sein des équipes et nous manquera énormément. Nous lui souhaitons le meilleur dans ses futures entreprises et espérons que nos chemins se croiseront à nouveau un jour."
+        },
+        {
+            "name": "Ibrahima Ndiaye, Responsable de l'Architecture",
+            "company": "ENGIE B2C",
+            "text": "J'ai eu l'opportunité et la chance de travailler avec Nicolas sur la transformation et l'agilité du système et il m'a très concrètement aidé à traduire notre schéma directeur en projets concrets (API / DATA / DevSecOps). Il a été aussi un vrai évangéliste du développement agile des applications à forte valeur métier. C'est très précieux de travailler avec une personne comme Nicolas qui allie les Soft Skills et les Hard Skills avec un vrai pragmatisme au moment de l'exécution."
+        },
+        {
+            "name": "Ratan Kumar, Responsable de l'Architecture",
+            "company": "University of Auckland",
+            "text": "J'ai eu la chance d'embaucher Nicolas Dreno en 2018 en tant qu'Architecte de Solutions Digitales. En constituant une nouvelle équipe d'architectes à partir de zéro, j'ai cherché loin et large des architectes obsédés par la vision client, axés sur les résultats, et ayant en même temps un profond intérêt pour l'ingénierie et la technologie afin de résoudre toutes sortes de défis commerciaux. Et nous en avions beaucoup à cette époque. Nicolas correspondait presque parfaitement au profil. Nicolas avait ce désir insatiable d'apprendre et d'expérimenter, puis de l'utiliser pour développer des capacités internes en convertissant les apprentissages en modèles documentés et acceptés pour les équipes de livraison et les autres Architectes de Solutions à consommer facilement. Je partageais profondément son aversion pour le mélange de mots à la mode dans les discussions. Au lieu de cela, il est resté concentré sur la résolution de certains des défis les plus urgents qu'il a relevés, comme la mise en place de plateformes d'intégration dans le cloud AWS, la création d'un écosystème d'API sécurisé et d'un hub de données, pour n'en nommer que quelques-uns. Désolé de vous voir partir, une véritable perte pour nous ici en Aotearoa !"
+        },
+        {
+            "name": "Tarek Ahmed, Chef de Projet",
+            "company": "TWG",
+            "text": "J'ai travaillé avec Nico pendant un an sur des solutions complexes de gestion des données de référence. J'ai été impressionné par la capacité de Nico à se mettre rapidement à niveau. Il a façonné et perfectionné l'équipe d'intégration, les a gérées pour livrer une solution de haute qualité et durable tout en étant un précurseur des nouvelles technologies et processus. Nico est un professionnel orienté qualité, pragmatique dans sa réflexion, un manager pratique, digne de confiance et respecté par les parties prenantes seniors et les membres de l'équipe. Je recommande fortement Nico pour l'architecture d'intégration complexe."
+        },
+        {
+            "name": "Hélène Piquer, Responsable de Département",
+            "company": "Ministère du Travail (ICDC)",
+            "text": "Nicolas Dreno a travaillé dans mon équipe de janvier 2012 à mars 2016, date à laquelle il a démissionné en très bons termes d'ICDC pour raisons familiales. A l'époque, j'étais responsable de l'équipe de Direction de Programmes, en charge de projets stratégiques majeurs. Très au fait des nouvelles pratiques technologiques, Nicolas s'est généralement positionné en leader, partageant et expliquant ses idées. Tout au long de sa carrière à ICDC, Nicolas n'a pas hésité à saisir les opportunités pour progresser à tous les niveaux (fonctionnel, technique, méthodologique, relationnel, etc.), quitte à remettre en question les cadres existants. Les résultats furent particulièrement visibles sur le projet CPF pour le Ministère du Travail, où il s'est rapidement imposé comme un pilier de l'équipe. Dès lors, il n'a pas hésité à promouvoir les pratiques innovantes au service des projets et plus largement de l'entreprise. Ce fut notamment le cas pour le développement et la mise en œuvre de solutions B2B et de confiance avec des partenaires externes (web services, fédération d'identité, France Connect, etc.). Doté d'un fort esprit lean et désireux de travailler plus efficacement, Nicolas n'a eu aucune difficulté à évoluer dans un environnement agile, cherchant l'amélioration continue pour identifier de nouvelles méthodes et outils et les faire connaître à son entourage. Nicolas a quitté ICDC avec une expertise architecturale significative, faisant de lui un expert technique sur de nombreux sujets. Depuis, j'ai eu plusieurs occasions d'échanger avec Nicolas sur son parcours et ses projets de carrière. Je recommande Nicolas pour tout poste de conception informatique en tant qu'architecte technique et fonctionnel, sans aucun doute quant à sa capacité à s'adapter à tout nouveau contexte."
+        },
+        {
+            "name": "Olivier Ledru, Coach Agile",
+            "company": "Caisse Des Dépôts et Consignations",
+            "text": "Nicolas a dirigé l'équipe de développement Scrum qui a construit le CPF. Il a été le moteur de la mise en œuvre de Scrum et de ses valeurs au sein de l'équipe Agile, ce qui représentait un énorme défi dans le contexte d'Informatique CDC."
+        }
+    ]
+}

@@ -1,0 +1,6 @@
+node_modules/
+public/
+npm-debug.log
+resume.json
+yarn.lock
+package-lock.json

@@ -1,0 +1,11 @@
+{{#if resume.references}}
+<section id="references">
+	<h2><i class="fa fa-thumbs-up left"></i> REFERENCES</h2>
+	{{#each resume.references}}
+	<blockquote class="reference-item">
+		{{text}}
+		<div class="name"><br>- {{name}}{{#if company}}, {{company}}{{/if}}{{#if source}} (via {{source}}){{/if}}</div>
+	</blockquote>
+	{{/each}}
+</section>
+{{/if}}

@@ -1,0 +1,345 @@
+{
+    "basics": {
+        "name": "Nicolas Dréno",
+        "label": "Solution Architect",
+        "email": "ndreno@gmail.com",
+        "location": {
+            "postalCode": "73100",
+            "city": "Aix les Bains",
+            "region": "Auvergne-Rhône-Alpes",
+            "country": "France",
+            "countryCode": "FR"
+        },
+        "profiles": [
+            {
+                "network": "LinkedIn",
+                "username": "nicolasdreno",
+                "url": "https://www.linkedin.com/in/nicolasdreno"
+            }
+        ],
+        "summary": "Guided by the philosophy that 'simplicity is the ultimate sophistication,' I am an experienced Solution Architect with deep expertise in cloud-native systems, API management, and event-driven architecture. I thrive on leading technical strategy, mentoring teams, and designing scalable, secure, and innovative solutions that deliver tangible business value. A pragmatic leader passionate about simplifying complex systems and fostering a culture of collaboration and continuous improvement."
+    },
+    "work": [
+        {
+            "company": "NumSpot",
+            "position": "Architect",
+            "location": "France",
+            "logo": "./logos/numspot_logo.jpeg",
+            "startDate": "2023-11",
+            "summary": "Leading architectural strategies and innovations for a Sovereign Cloud provider, with a focus on open-source solutions and cloud-native services.",
+            "highlights": [
+                "Enhancing cloud-native services, PaaS offerings, and API management solutions.",
+                "Streamlining infrastructure and improving service reliability through collaboration with cross-functional teams.",
+                "Driving adoption of scalable, secure, and open-source technologies aligned with industry best practices.",
+                "Contributing to conformity requirements like SecNumCloud qualification."
+            ],
+            "technologies": [
+                "Golang", "Kubernetes", "OAS", "Scalar", "pb33f", "Terraform", "DrawIO", "Docusaurus", "Gitlab"
+            ]
+        },
+        {
+            "company": "Back Market",
+            "position": "Senior API Architect",
+            "location": "France",
+            "logo": "./logos/back_market_logo.jpeg",
+            "startDate": "2022-09",
+            "endDate": "2023-11",
+            "summary": "Shaped the API strategy, architecture, and community practices for a fast-growing e-commerce platform, driving API-first initiatives and modernising the technical ecosystem.",
+            "highlights": [
+                "Defined and evangelized the transversal API vision, leading an API chapter, authoring guidelines in Backstage, and coaching teams on DDD and API-first principles.",
+                "Architected a '3-layered' API strategy (Experience, Composite, Domain) and designed event-driven systems using patterns like CQRS and SAGA.",
+                "Led the selection and proof-of-concept for API Gateway solutions (KrakenD) and modernized service-to-service communication.",
+                "Redesigned the platform's authorization model using Open Policy Agent (OPA), introducing Policy Enforcement and Decision Points."
+            ],
+            "technologies": [
+                "AWS", "GCP", "Python", "NodeJs", "Github", "KrakendD", "Spotlight", "Backstage", "Docker", "Excalidraw", "Jira"
+            ]
+        },
+        {
+            "company": "The Warehouse Group",
+            "position": "Solutions Architect",
+            "location": "Auckland, NZ",
+            "logo": "./logos/the_warehouse_group_logo.jpeg",
+            "startDate": "2021-05",
+            "endDate": "2022-06",
+            "summary": "Delivered scalable integration and streaming solutions, modernised API management, and drove DevOps initiatives for a leading retail group.",
+            "highlights": [
+                "Designed and implemented the core integration solution for a new Master Data Management platform using Confluent Kafka, Azure Kubernetes Service (AKS), and Spring Boot microservices.",
+                "Enhanced the API management platform with Azure APIM, enforcing OAuth2.0, OpenAPI standards, and robust JSON Schema governance.",
+                "Championed a decoupled, streaming-first integration framework based on Confluent Cloud Kafka and Infrastructure-as-Code principles.",
+                "Promoted DevOps best practices by building CI/CD pipelines and contributing to a 'Golden Path' developer platform inspired by Backstage."
+            ],
+            "technologies": [
+                "Java", "JavaScript", "Azure", "Swagger", "Backstage", "Atlassian", "Json-schema"
+            ]
+        },
+        {
+            "company": "Qard",
+            "position": "Head of Engineering",
+            "location": "Paris, France",
+            "logo": "./logos/qard_logo.jpeg",
+            "startDate": "2021-02",
+            "summary": "Fostering collaboration, mentoring talent and shaping the future of digital finance through technology at Qard, a dynamic fintech company.",
+            "highlights": [
+                "Leading the engineering team to design and deliver innovative financial solutions.",
+                "Specialising in scalable API development and robust system architecture to power seamless, secure, and high-performance platforms.",
+                "Driving technical strategy, ensuring system integration, and enabling the delivery of cutting-edge financial products."
+            ],
+            "technologies": [
+                "PHP", "AWS", "GCP", "S3", "Notion", "Gitlab"
+            ]
+        },
+        {
+            "company": "University of Auckland",
+            "position": "Digital Solution Architect",
+            "location": "Auckland, NZ",
+            "logo": "./logos/the_university_of_auckland_logo.jpeg",
+            "startDate": "2018-10",
+            "endDate": "2021-05",
+            "summary": "Modernised digital platforms and integration solutions for New Zealand's leading university, leveraging cloud-native technologies and advanced analytics.",
+            "highlights": [
+                "Architected a real-time Data Hub using AWS (Kafka, Elasticsearch, ECS, Fargate) to provide a 360° source of truth for university data.",
+                "Led the re-architecture of the lecture video delivery platform to serve 85+ petabytes of content globally using AWS S3, CloudFront, and Lambda.",
+                "Modernized the IAM platform by integrating AWS Cognito for OAuth2.0/OIDC, and rejuvenated the API management layer with Kong Enterprise.",
+                "Designed and promoted 'Integration By Convention' patterns using Kafka and serverless functions, reducing reliance on traditional ESB tools."
+            ]
+        },
+        {
+            "company": "ENGIE B2C",
+            "position": "Digital Architect",
+            "location": "Paris, France",
+            "logo": "./logos/engie_logo.jpeg",
+            "startDate": "2016-03",
+            "endDate": "2018-10",
+            "summary": "Led the architecture of digital solutions for customer-facing platforms, driving cloud adoption and innovation for a major energy provider.",
+            "highlights": [
+                "Designed cloud-native architectures for B2C digital platforms, mobile apps, and IoT integrations on AWS.",
+                "Led technical evaluations and proof-of-concepts for API Management (Kong, Gravitee, Tyk) and modern data platforms (Kafka, CockroachDB).",
+                "Championed DevOps culture by establishing a 'CI/CD Factory' using Jenkins, Docker, Rancher, and Ansible.",
+                "Acted as an Agile coach, promoting Scrum, TDD/BDD, and Domain-Driven Design practices within the engineering teams."
+            ]
+        },
+        {
+            "company": "Ministry of Work",
+            "position": "Software Architect and Scrum Master",
+            "location": "Bordeaux, France",
+            "logo": "./logos/informatique_cdc_logo.jpeg",
+            "startDate": "2014-03",
+            "endDate": "2016-03",
+            "summary": "Architected and implemented a national training platform (CPF) for the French Ministry of Work, targeting 42 million users, while modernising legacy systems.",
+            "highlights": [
+                "Designed a modern IS urbanisation with 10+ applications, centered around a REST services architecture.",
+                "Implemented key technical components including Spring Batch, and an IAM platform based on OpenAM and OpenDJ.",
+                "Led agile processes as a Scrum Master, establishing a full CI/CD pipeline with Jenkins, Maven, SonarQube, and Jira.",
+                "Guided the product owner in milestone planning and resource allocation across internal and external teams."
+            ]
+        },
+        {
+            "company": "Deposits and Consignments Fund",
+            "position": "Software Engineer",
+            "location": "Bordeaux, France",
+            "logo": "./logos/informatique_cdc_logo.jpeg",
+            "startDate": "2009-09",
+            "endDate": "2014-03",
+            "summary": "Developed and maintained applications for the biggest French public financial institution, focusing on SOA, performance optimisation, and UI development.",
+            "highlights": [
+                "Developed JavaScript applications and user interfaces using JSP, HTML, and CSS.",
+                "Implemented a SOA architecture using JAX-WS and SoapUI for SOAP services.",
+                "Monitored code quality with SonarQube and resolved performance issues with production teams."
+            ]
+        },
+        {
+            "company": "Restopolitan",
+            "position": "Intern",
+            "location": "Paris, France",
+            "logo": "./logos/restopolitan_logo.jpeg",
+            "startDate": "2008-04",
+            "endDate": "2008-09",
+            "summary": "Provided IT support and system maintenance for a startup specialising in restaurant table management.",
+            "highlights": [
+                "Performed system maintenance and installations.",
+                "Supported in-house software applications for restaurant management."
+            ]
+        }
+    ],
+    "education": [
+        {
+            "institution": "ENSEIRB-MATMECA",
+            "area": "Network Infrastructure and Software Engineering",
+            "studyType": "Master's Degree"
+        },
+        {
+            "institution": "Lycée Jules Ferry Versailles",
+            "area": "Computer Sciences",
+            "studyType": "Bachelor's Degree"
+        },
+        {
+            "institution": "Technological University Ville d'Avray",
+            "area": "Electronic and Industrial Software",
+            "studyType": "Technological Degree"
+        }
+    ],
+    "skills": [
+        {
+            "name": "Cloud & DevOps",
+            "keywords": [
+                "AWS (ECS, Fargate, Lambda, S3, CloudFront, Cognito, Kafka, Kinesis, Elasticsearch)",
+                "Azure (AKS, APIM)",
+                "GCP",
+                "Outscale",
+                "Docker",
+                "Kubernetes",
+                "Terraform",
+                "Ansible",
+                "Jenkins",
+                "Git",
+                "Gitlab CI",
+                "CI/CD",
+                "Infrastructure as Code (Terraform)"
+            ]
+        },
+        {
+            "name": "API & Integration",
+            "keywords": [
+                "API Design (REST, OpenAPI, Swagger)",
+                "API Management (Kong, KrakenD, Azure APIM, Gravitee, Tyk)",
+                "Event-Driven Architecture",
+                "Apache Kafka",
+                "Confluent Cloud",
+                "RabbitMQ",
+                "CQRS",
+                "Event Sourcing",
+                "SOA (SOAP, JAX-WS)"
+            ]
+        },
+        {
+            "name": "Programming & Frameworks",
+            "keywords": [
+                "Java",
+                "Golang",
+                "Node.js",
+                "JavaScript",
+                "Spring (Boot, Core, MVC, Security, Batch)",
+                "Python (basics)",
+                "Shell/Bash",
+                "JSON Schema",
+                "OpenApi Specification (OAS)"
+            ]
+        },
+        {
+            "name": "Identity & Access Management (IAM)",
+            "keywords": [
+                "OAuth2.0",
+                "OpenID Connect (OIDC)",
+                "SAML",
+                "LDAP",
+                "Open Policy Agent (OPA)",
+                "OpenAM/OpenDJ",
+                "LDAP"
+            ]
+        },
+        {
+            "name": "Databases",
+            "keywords": [
+                "SQL (MySQL, PostgreSQL, MariaDB, Oracle)",
+                "NoSQL (MongoDB, DynamoDB, Elasticsearch)",
+                "NewSQL (CockroachDB, ArangoDB)",
+                "Grap (MemGraph)"
+            ]
+        },
+        {
+            "name": "Methodologies & Tooling",
+            "keywords": [
+                "Agile (Scrum, Kanban)",
+                "Domain-Driven Design (DDD)",
+                "Jira",
+                "Backstage",
+                "Stoplight",
+                "SonarQube",
+                "Enterprise Architect",
+                "Draw.io"
+            ]
+        }
+    ],
+    "languages": [
+        {
+            "language": "🇫🇷 French",
+            "level": "Native"
+        },
+        {
+            "language": "🇬🇧 English",
+            "level": "Fluent"
+        }
+    ],
+    "certifications": [
+        {
+            "title": "AWS Solution Architect - Associate",
+            "date": "2021",
+            "awarder": "Amazon Web Services"
+        },
+        {
+            "title": "Professional Scrum Developer",
+            "date": "2019",
+            "awarder": "Scrum.org"
+        },
+        {
+            "title": "First Aid Certification",
+            "date": "2015",
+            "awarder": "French Red Cross"
+        }
+    ],
+    "interests": [
+        {
+            "name": "DIY / Crafting / Homebrewing"
+        },
+        {
+            "name": "Squash and Table Tennis"
+        },
+        {
+            "name": "Hiking and Trekking"
+        },
+        {
+            "name": "Wine Tasting and Gastronomy"
+        },
+        {
+            "name": "Music Festivals and Cinema"
+        }
+    ],
+    "references": [
+        {
+            "name": "From Tim Chaffe, Chief IT & Digital Architect",
+            "company": "University of Auckland",
+            "text": "Nico slotted in well to our Solutions Architecture team and quickly made a difference. Nico is a talented, highly-skilled technologist who will add value to any work environment."
+        },
+        {
+            "name": "From Jon Sandberg, Domain Chapter Lead",
+            "company": "TWG",
+            "text": " Nicolas Dreno has been an employee of The Warehouse Group since May 2021. He has been a pleasure to work with, bringing his attention to detail and passion to everything he has been involved in. He has been crucial with the implementation of our Master Data Management platform, evolution of our real-time event streaming platform (Confluent Kafka), decoupling internal and external APIs using cloud API management (Azure and AWS), growth and education in our data governance areas, skills uplift in data modelling and DevOps automation (to name a few). His communication and people skills are excellent, and he has been a trusted leader in architecture, software engineering and data management. I can highly recommend Nicolas for any technical architecture or engineering related roles as he is incredibly intelligent and capable in all technical areas I have worked with him on. He is very well respected here at TWG across all levels of management and teams and will be dearly missed. We wish him the best in his future endeavors and hope that someday our paths will cross again."
+        },
+        {
+            "name": "From Ibrahima Ndiaye, Head of Architecture",
+            "company": "ENGIE B2C",
+            "text": "I had the opportunity and the chance to work with Nicolas on the transformation and agility of the system and he very concretely helped me to translate our master plan into concrete projects (API / DATA / DevSecOps). He was also a true evangelist of agile development of applications with high business value. It is very valuable to work with a person like Nicolas who combines Soft Skills and Hard Skills with real pragmatism when it comes to execution."
+        },
+        {
+            "name": "From Ratan Kumar, Head of Architecture",
+            "company": "University of Auckland",
+            "text": "I was lucky to hire Nicolas Dreno in 2018 as a Digital Solutions Architect. Building a new team of architects from the ground up, I went far and wide for architects who are customer obsessed, outcome focussed and at the same time have deep interest in engineering and technology to solve all kinds of business challenges. And we had lots of them during that time. Nicolas fit the bill almost perfectly. Nicolas had this insatiable desire to learn and experiment, then use it to build internal capabilities by converting learnings into documented and agreed patterns for delivery teams and other Solution Architects to easily consume. I deeply shared his dislike for mixing buzzwords in discussions. Instead he stayed focussed on solving some of the most pressing challenges that he took on, like setting up integration platforms in AWS cloud, creating secure API ecosystem and Data hub, to name a few. Sorry to see you go, real loss for us here in Aotearoa!"
+        },
+        {
+            "name": "From Tarek Ahmed, Project Manager",
+            "company": "TWG",
+            "text": "I worked with Nico for a year in challenging master data managment solutions. I was impressed by Nico ability to come up to speed quickly. He shaped and upskilled the integration team, managed them to deliver high quality and sustainable solution while being the early adaptor of new technology and processes. Nico is quality oriented professional, pragmatic in his thinking, hands-on manager, trusted and respected by senior stakeholders and the team members. I strongly recommend Nico for complex integration architecture."
+        },
+        {
+            "name": "From Hélène Piquer, Department Manager",
+            "company": "Ministry of Labor (ICDC)",
+            "text": "Nicolas Dreno worked in my team from January 2012 to March 2016, when he resigned on very good terms from ICDC for family reasons. At the time, I was responsible for the Program Management team, overseeing major strategic projects. Highly knowledgeable about new technology practices, Nicolas generally positioned himself as a leader, sharing and explaining his ideas. Throughout his career at ICDC, Nicolas did not hesitate to seize opportunities to advance at all levels (functional, technical, methodological, interpersonal, etc.), even if this meant structural changes. The results were particularly visible in the CPF project for the Ministry of Labor, where he quickly established himself as a pillar of the team. Since then, he has not hesitated to promote innovative practices for the benefit of projects and, more broadly, the company. This was particularly the case for the development and implementation of B2B and trust solutions with external partners (web services, identity federation, France Connect, etc.). With a strong lean mindset and keen to work more efficiently, Nicolas had no trouble evolving in an agile environment, seeking continuous improvement to identify new methods and tools and introduce them to those around him. Nicolas left ICDC with significant architectural expertise, making him a technical expert on numerous topics. Since then, I have had several opportunities to discuss his career path and career plans with Nicolas. I recommend Nicolas for any IT design position as a technical and functional architect, without any doubt regarding his ability to adapt to any new context."
+        },
+        {
+            "name": "From Olivier Ledru, Agile Coach",
+            "company": "Caisse Des Dépôts et Consignations",
+            "text": "Nicolas led the Scrum development team that built the CPF. He was the driving force behind the implementation of Scrum and its values within the Agile team, which was a huge challenge in the context of Informatique CDC."
+        }
+    ]
+}
