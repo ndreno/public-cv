@@ -1,5 +1,10 @@
 name: Build and Deploy Resume
 
+permissions:
+  contents: write # This grants permission to push commits to the repo
+  pages: write    # This grants permission to deploy to GitHub Pages
+  id-token: write # Required for OpenID Connect (OIDC) authentication, good practice for GH Pages
+
 on:
   push:
     branches:
