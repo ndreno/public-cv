@@ -3,10 +3,11 @@
     "version": "1.0.0",
     "description": "Generates HTML resumes from JSON files.",
     "scripts": {
-        "build:en": "resume export --format html --theme ./themes/jsonresume-theme-cora-master-customized resumes/en.json > build/index.html",
-        "build:fr": "resume export --format html --theme ./themes/jsonresume-theme-cora-master-customized resumes/fr.json > build/fr.html"
+        "build:en": "resume export build/en.html --format html --theme jsonresume-theme-cora resumes/en.json",
+        "build:fr": "resume export build/fr.html --format html --theme jsonresume-theme-cora resumes/fr.json"
     },
     "dependencies": {
-        "resume-cli": "latest"
+        "resume-cli": "latest",
+        "jsonresume-theme-cora": "github:ndreno/jsonresume-theme-cora"
     }
 }
