@@ -1,0 +1,753 @@
+
+<!doctype html>
+<html>
+	<head>
+	<meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Nicolas Dréno</title>
+	<link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+	<style>
+		/* --- GENERAL &amp; TYPOGRAPHY --- */
+body {
+    font-family: Montserrat;
+    font-size:1em;
+    color: #333333;
+}
+
+p, li {
+    font-family: &#x27;Open Sans&#x27;;
+}
+
+a {
+    color: #333333;
+    text-decoration: none;
+}
+a:visited { color: #4e4e4e; }
+a:hover {
+    color: #4e4e4e;
+    text-decoration: underline;
+}
+
+h1 {
+    font-size: 2em;
+    margin-bottom: 0.2em;
+}
+
+h2 {
+    font-size: 1.7em;
+    margin-top: 2em;
+    margin-bottom: 0.2em;
+}
+
+h3 {
+    font-size: 1.3em;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+h4 {
+    color: #4e4e4e;
+    font-size: 1.1em;
+    margin-top: 0;
+}
+
+.fa { font-size: 2em; }
+.fa.left { font-size: 1em; }
+
+/* --- LAYOUT &amp; HEADER --- */
+.main {
+    margin: 0 auto;
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-bottom: 50px;
+}
+
+header {
+    text-align: center;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+.picture {
+    border-radius: 3%;
+    margin: 20px;
+    width: 100px;
+    height: 100px;
+}
+
+.label {
+    margin-top: 0;
+    margin-bottom: 0.5em;
+}
+
+/* --- CONTACT &amp; PROFILES --- */
+.profile {
+    font-family: Montserrat;
+    white-space:nowrap;
+    margin: 0.5em;
+}
+
+.contact-header {
+    font-weight: bold;
+    color: #4e4e4e;
+    margin:1em;
+}
+
+.contact-header .fa,
+.profile .fa {
+    font-size: 1.5em;
+}
+
+.address {
+    display: block
+}
+
+/* --- WORK EXPERIENCE --- */
+.job {
+    position: relative;
+    overflow: auto; /* A simple way to contain floats */
+    padding-bottom: 1em;
+    margin-bottom: 1em;
+    border-bottom: 1px solid #eee;
+}
+
+.company-logo {
+    float: right;
+    max-width: 100px;
+    max-height: 100px;
+    margin-left: 20px;
+    border-radius: 4px;
+}
+
+/* --- SKILLS (MINIMALIST OUTLINE STYLE on ORIGINAL BASE) --- */
+.skill-category {
+    margin-bottom: 1.5em;
+}
+
+.skill-category h4 {
+    font-weight: normal; /* Matches the original h4 style */
+    color: #4e4e4e;
+    font-size: 1.1em;
+    margin-bottom: 0.8em;
+}
+
+.keywords-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+}
+
+.keyword {
+    background-color: transparent;
+    border: 1px solid #ccc;
+    color: #4e4e4e;
+    padding: 5px 12px;
+    border-radius: 16px;
+    font-size: 0.9em;
+    font-family: &#x27;Open Sans&#x27;;
+    transition: all 0.2s ease-in-out;
+}
+
+.keyword:hover {
+    background-color: #333;
+    border-color: #333;
+    color: #fff;
+    transform: translateY(-2px);
+}
+
+
+/* --- QUOTE --- */
+blockquote {
+    margin: 2em 10px;
+    padding: 1em 10px;
+    border-left: 10px solid #edf0f5;
+    font-family: &#x27;Open Sans&#x27;;
+    font-size: 1.5em;
+}
+
+blockquote .name {
+    font-weight: bold;
+    font-family: &quot;Montserrat&quot;;
+}
+
+/* --- REFERENCES --- */
+/* Overrides the default blockquote style specifically for the references section */
+#references blockquote {
+    /* Text style to match standard paragraphs */
+    font-size: 1em;
+    font-style: normal;
+    color: #333333;
+
+    /* Layout &amp; Decoration */
+    border-left: 4px solid #eee; /* A more subtle left border */
+    margin: 0 0 1.5em 0;         /* Space below each reference, no other margins */
+    padding: 0.2em 0 0.2em 15px;   /* Minimal vertical padding, keeps left indent */
+}
+
+/* Style for the attribution line (name, company, source) - no change needed here */
+.reference-item .name {
+  font-size: 0.9em;    /* Makes the font slightly smaller than the main text */
+  font-style: italic;  /* Makes it stand out visually */
+  color: #444;        /* A slightly lighter color to de-emphasize it */
+}
+
+
+/* --- RESPONSIVE &amp; PRINT (Original) --- */
+.responsive-show {
+    display: none;
+}
+
+@media screen and (max-width: 1000px) {
+    header {
+        font-size: 1.66em;
+    }
+    h2 {
+        font-size: 3em;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    p, li, blockquote {
+        font-size: 1.2em;
+    }
+    h2 {
+        font-size: 2.3em;
+    }
+    .responsive-hidden {
+        display: none;
+        visibility: hidden;
+    }
+    .responsive-show {
+        display: inline;
+        visibility: visible;
+    }
+}
+
+@media print {
+    body { font-size: 0.6em; }
+    .address { display: inline-block; }
+    .profile { font-size: 1em; display: inline-block; }
+
+    /* This line now correctly keeps logos hidden in the header but shows them elsewhere */
+    #profiles .contact-header, #languages, #interests { display: none; }
+
+    /* This rule hides the download button */
+    .download-btn { display: none !important; }
+
+    /* It makes the company logos smaller only for printing */
+    .company-logo {
+        max-width: 60px !important;
+        max-height: 40px !important;
+        margin-left: 15px !important;
+    }
+
+    .skills { page-break-inside: avoid; }
+    .main {
+        padding: 10px;
+        margin-left: 2%;
+        margin-right: 2%;
+    }
+    section:not(#work) { page-break-inside: avoid; }
+    .job { page-break-inside: avoid; }
+    @page {
+        size: auto;
+        margin: 25mm 10mm;
+    }
+}
+
+.download-btn {
+    display: block; /* Makes it take its own line */
+    margin: 25px auto; /* Centers the button horizontally */
+    background-color: #333;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-family: &#x27;Montserrat&#x27;, sans-serif;
+    font-size: 0.9em;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+}
+
+.download-btn:hover {
+    background-color: #555;
+}
+
+.download-btn .fa {
+    font-size: 1em;
+    margin-right: 8px;
+}
+
+.education-item .meta {
+    font-size: 0.9em;
+    font-style: italic;
+    color: #555; /* A slightly lighter color */
+    margin-top: -5px; /* Pull it closer to the heading above */
+}
+
+.education-item .gpa {
+    margin-left: 15px;
+}
+
+.education-item .courses-title {
+    margin-bottom: 5px;
+    margin-top: 10px;
+}
+
+.education-item {
+    margin-bottom: 20px; /* Add space between education entries */
+}
+
+ul.technologies {
+	list-style: none;
+	padding: 0;
+	margin: 0.5em 0 1em;
+	display: flex;
+	flex-wrap: wrap;
+	gap: 0.4em;
+}
+
+ul.technologies li {
+	background: #f0f0f0;
+	border-radius: 6px;
+	padding: 0.2em 0.6em;
+	font-size: 0.9em;
+	color: #333;
+}
+
+    </style>
+	<script src= "https://cdnjs.cloudflare.com/ajax/libs/respond.js/1.4.2/respond.min.js"></script>
+	</head>
+	<body>
+				<header>
+				<h1>Nicolas Dréno</h1>
+				<h3 class= "label">Architecte Solutions</h3>
+		
+		
+				<button onclick="window.print()" class="download-btn">
+		        	<i class="fa fa-download"></i> Download as PDF
+		   		</button>
+		
+				<div id= "contact">
+					<span class= "contact-header">
+						<a href="https://maps.google.com/?q=Aix-les-Bains, Auvergne-Rhône-Alpes, France"><i title="ADDRESS" class="fa fa-map-marker left"></i>&nbsp;  Aix-les-Bains, Auvergne-Rhône-Alpes, France</a>
+					</span>
+					<br/><br/>
+					<span class= "contact-header">
+						<a href= "mailto:ndreno@gmail.com" target= "_blank"><i title="EMAIL" class="fa fa-envelope left"></i>&nbsp;ndreno@gmail.com</a>
+					</span>
+					<br/><br/>
+				</div>
+				<br>
+				<div id= "profiles">
+					<span class= "profile"><a href= "https://www.linkedin.com/in/nicolasdreno" target= "_blank" class= "profile"><i class="fa fa-linkedin left"></i>&nbsp;nicolasdreno</a></span> 
+				</div>		
+			</header>		<div class="main">
+			<section id="about">
+				<h2><i class="fa fa-user left"></i> ABOUT</h2>
+				<p>
+					Architecte logiciel expérimenté, guidé par la conviction que la simplicité est la sophistication ultime. Spécialisé dans la modernisation et la rationalisation de systèmes d&#x27;information complexes vers des architectures distribuées, sécurisées et maintenables. Passionné par la cohérence technique, la standardisation des pratiques et la collaboration interdomaines. Habitué à accompagner les équipes dans la définition de socles techniques, la gouvernance d&#x27;API et la mise en œuvre de solutions pérennes alignées sur les exigences métiers et de sécurité.
+				</p>
+			</section>
+			<section id="work">
+				<h2><i class="fa fa-suitcase left"></i> WORK EXPERIENCE</h2>
+					<div class="job">
+						<img src="./logos/numspot_logo.jpeg" alt="NumSpot Logo" class="company-logo">
+			            
+						<h3>Architecte logiciel &amp; DevOps, NumSpot</h3>
+						<h4>
+							2023-Nov
+								<span class="endDate"> - Present</span>
+						</h4>
+			
+						<p>Conception d&#x27;un socle technique unifié pour un fournisseur européen de cloud souverain, garantissant la cohérence, la sécurité et la pérennité des architectures. Responsable des stratégies d&#x27;architecture et d&#x27;innovation autour des services cloud natifs et de la gouvernance des API.</p>
+			
+						<h4>HIGHLIGHTS</h4>
+						<ul class="highlights">
+							<li>Définition d&#x27;une architecture cible modulaire et sécurisée pour des services cloud natifs et des offres PaaS (rédaction HLD/LLDs).</li>
+							<li>Conception et mise en œuvre d&#x27;architectures pérennes et évolutives pour la gestion et la standardisation des API.</li>
+							<li>Accompagnement des équipes dans l&#x27;application des bonnes pratiques d&#x27;architecture, de sécurité et d&#x27;automatisation.</li>
+							<li>Animation d&#x27;un cadre de gouvernance technique et définition des socles communs au sein du SI.</li>
+							<li>Promotion des technologies open source et alignement avec les standards de sécurité (SecNumCloud).</li>
+							<li>Participation à la qualification de conformité et à la définition des politiques techniques du cloud souverain.</li>
+						</ul>
+			
+						<h4>TECHNOLOGIES</h4>
+						<ul class="technologies">
+							<li>Golang</li>
+							<li>Kubernetes</li>
+							<li>OAS</li>
+							<li>Scalar</li>
+							<li>pb33f</li>
+							<li>Terraform</li>
+							<li>DrawIO</li>
+							<li>Docusaurus</li>
+						</ul>
+					</div>
+					<div class="job">
+						<img src="./logos/back_market_logo.jpeg" alt="Back Market Logo" class="company-logo">
+			            
+						<h3>Architecte API Senior, Back Market</h3>
+						<h4>
+							2022-Sep
+								<span class="endDate"> - 2023-Nov</span>
+						</h4>
+			
+						<p>Définition de la stratégie API, de l&#x27;architecture et des bonnes pratiques communautaires pour une plateforme e-commerce en forte croissance, en pilotant des initiatives API-first et la modernisation de l&#x27;écosystème technique.</p>
+			
+						<h4>HIGHLIGHTS</h4>
+						<ul class="highlights">
+							<li>Définition et évangélisation de la vision API transversale, animation d&#x27;un API Chapter, rédaction de guides dans Backstage et accompagnement des équipes sur les principes DDD et API-first.</li>
+							<li>Conception d&#x27;une stratégie API à trois couches (Experience, Composite, Domain) et d&#x27;architectures orientées événements (CQRS, SAGA).</li>
+							<li>Pilotage des POC de solutions d&#x27;API Gateway (KrakenD) et modernisation des communications interservices.</li>
+							<li>Communication technique claire et adaptée aux différents interlocuteurs (développeurs, responsables sécurité, métiers)</li>
+							<li>Refonte du modèle d&#x27;autorisation de la plateforme à l&#x27;aide d&#x27;Open Policy Agent (OPA), avec mise en place des points d&#x27;application et de décision de policies.</li>
+						</ul>
+			
+						<h4>TECHNOLOGIES</h4>
+						<ul class="technologies">
+							<li>AWS</li>
+							<li>GCP</li>
+							<li>Python</li>
+							<li>NodeJs</li>
+							<li>Github</li>
+							<li>KrakendD</li>
+							<li>Spotlight</li>
+							<li>Backstage</li>
+							<li>Docker</li>
+							<li>Excalidraw</li>
+							<li>Jira</li>
+						</ul>
+					</div>
+					<div class="job">
+						<img src="./logos/the_warehouse_group_logo.jpeg" alt="The Warehouse Group Logo" class="company-logo">
+			            
+						<h3>Architecte Solutions, The Warehouse Group</h3>
+						<h4>
+							2021-May
+								<span class="endDate"> - 2022-Jun</span>
+						</h4>
+			
+						<p>Conception de solutions d&#x27;intégration et de streaming à grande échelle, modernisation de la gestion des API et pilotage d&#x27;initiatives DevOps pour un grand groupe de distribution.</p>
+			
+						<h4>HIGHLIGHTS</h4>
+						<ul class="highlights">
+							<li>Conception et mise en œuvre de la solution d&#x27;intégration principale pour une nouvelle plateforme de gestion des données de référence, avec Confluent Kafka, Azure Kubernetes Service (AKS) et des microservices Spring Boot.</li>
+							<li>Amélioration de la plateforme de gestion des API avec Azure APIM, intégrant OAuth2.0, OpenAPI et une gouvernance stricte des schémas JSON.</li>
+							<li>Promotion d&#x27;une architecture découplée et orientée streaming basée sur Confluent Cloud Kafka et les principes d&#x27;Infrastructure as Code.</li>
+							<li>Diffusion des bonnes pratiques DevOps via la mise en place de pipelines CI/CD et la contribution à une plateforme développeur type &#x27;Golden Path&#x27; inspirée de Backstage.</li>
+						</ul>
+			
+						<h4>TECHNOLOGIES</h4>
+						<ul class="technologies">
+							<li>Java</li>
+							<li>JavaScript</li>
+							<li>Azure</li>
+							<li>Swagger</li>
+							<li>Backstage</li>
+							<li>Atlassian</li>
+							<li>Json-schema</li>
+						</ul>
+					</div>
+					<div class="job">
+						<img src="./logos/qard_logo.jpeg" alt="Qard Logo" class="company-logo">
+			            
+						<h3>Directeur Technique (Head of Engineering), Qard</h3>
+						<h4>
+							2021-Feb
+								<span class="endDate"> - Present</span>
+						</h4>
+			
+						<p>Encadrement des équipes, mentorat et définition de la stratégie technologique pour une fintech innovante, au service de la transformation du financement digital.</p>
+			
+						<h4>HIGHLIGHTS</h4>
+						<ul class="highlights">
+							<li>Direction de l&#x27;équipe d&#x27;ingénierie pour concevoir et livrer des solutions financières innovantes.</li>
+							<li>Spécialisation dans le développement d&#x27;API évolutives et l&#x27;architecture de systèmes robustes, performants et sécurisés.</li>
+							<li>Pilotage de la stratégie technique, intégration des systèmes et livraison de produits financiers de nouvelle génération.</li>
+						</ul>
+			
+						<h4>TECHNOLOGIES</h4>
+						<ul class="technologies">
+							<li>PHP</li>
+							<li>AWS</li>
+							<li>GCP</li>
+							<li>S3</li>
+							<li>Notion</li>
+							<li>Gitlab</li>
+						</ul>
+					</div>
+					<div class="job">
+						<img src="./logos/the_university_of_auckland_logo.jpeg" alt="University of Auckland Logo" class="company-logo">
+			            
+						<h3>Architecte Solutions Digitales, University of Auckland</h3>
+						<h4>
+							2018-Oct
+								<span class="endDate"> - 2021-May</span>
+						</h4>
+			
+						<p>Modernisation des plateformes numériques et des solutions d&#x27;intégration pour la principale université de Nouvelle-Zélande, en s&#x27;appuyant sur les technologies cloud natives et l&#x27;analyse de données avancée.</p>
+			
+						<h4>HIGHLIGHTS</h4>
+						<ul class="highlights">
+							<li>Conception d&#x27;un Data Hub temps réel sur AWS (Kafka, Elasticsearch, ECS, Fargate) pour centraliser les données de l&#x27;université.</li>
+							<li>Refonte de la plateforme de diffusion vidéo pour 85+ pétaoctets de contenu via AWS S3, CloudFront et Lambda.</li>
+							<li>Modernisation de la plateforme IAM avec AWS Cognito (OAuth2.0/OIDC) et rénovation de la couche de gestion d&#x27;API avec Kong Enterprise.</li>
+							<li>Mise en place de modèles &#x27;Integration By Convention&#x27; basés sur Kafka et des fonctions serverless, réduisant la dépendance aux ESB traditionnels.</li>
+						</ul>
+			
+					</div>
+					<div class="job">
+						<img src="./logos/engie_logo.jpeg" alt="ENGIE B2C Logo" class="company-logo">
+			            
+						<h3>Architecte Digital, ENGIE B2C</h3>
+						<h4>
+							2016-Mar
+								<span class="endDate"> - 2018-Oct</span>
+						</h4>
+			
+						<p>Conception et pilotage des architectures digitales orientées clients, accompagnant la transformation cloud et l&#x27;innovation d&#x27;un grand groupe énergétique.</p>
+			
+						<h4>HIGHLIGHTS</h4>
+						<ul class="highlights">
+							<li>Conception d&#x27;architectures cloud natives pour les plateformes B2C, applications mobiles et intégrations IoT sur AWS.</li>
+							<li>Pilotage d&#x27;évaluations techniques et de POC pour la gestion d&#x27;API (Kong, Gravitee, Tyk) et les plateformes de données modernes (Kafka, CockroachDB).</li>
+							<li>Promotion de la culture DevOps via la création d&#x27;une &#x27;CI/CD Factory&#x27; basée sur Jenkins, Docker, Rancher et Ansible.</li>
+							<li>Rôle d&#x27;animateur agile, promouvant Scrum, TDD/BDD et les principes de Domain-Driven Design.</li>
+						</ul>
+			
+					</div>
+					<div class="job">
+						<img src="./logos/informatique_cdc_logo.jpeg" alt="Ministère du Travail Logo" class="company-logo">
+			            
+						<h3>Architecte Logiciel et Scrum Master, Ministère du Travail</h3>
+						<h4>
+							2014-Mar
+								<span class="endDate"> - 2016-Mar</span>
+						</h4>
+			
+						<p>Conception et mise en œuvre d&#x27;une plateforme nationale de formation (CPF) pour 42 millions d&#x27;utilisateurs, tout en modernisant les systèmes existants.</p>
+			
+						<h4>HIGHLIGHTS</h4>
+						<ul class="highlights">
+							<li>Urbanisation du SI autour d&#x27;une architecture REST composée de plus de 10 applications.</li>
+							<li>Implémentation de composants techniques clés, dont Spring Batch, et d&#x27;une plateforme IAM basée sur OpenAM et OpenDJ.</li>
+							<li>Encadrement des processus agiles en tant que Scrum Master, avec mise en place d&#x27;une chaîne CI/CD complète (Jenkins, Maven, SonarQube, Jira).</li>
+							<li>Accompagnement du Product Owner dans la planification et la gestion des ressources internes et externes.</li>
+						</ul>
+			
+					</div>
+					<div class="job">
+						<img src="./logos/informatique_cdc_logo.jpeg" alt="Caisse des Dépôts et Consignations Logo" class="company-logo">
+			            
+						<h3>Ingénieur Logiciel, Caisse des Dépôts et Consignations</h3>
+						<h4>
+							2009-Sep
+								<span class="endDate"> - 2014-Mar</span>
+						</h4>
+			
+						<p>Développement et maintenance d&#x27;applications pour la principale institution financière publique française, avec un focus sur la performance, l&#x27;IHM et l&#x27;architecture SOA.</p>
+			
+						<h4>HIGHLIGHTS</h4>
+						<ul class="highlights">
+							<li>Développement d&#x27;applications JavaScript et d&#x27;interfaces utilisateur (JSP, HTML, CSS).</li>
+							<li>Mise en place d&#x27;une architecture SOA via JAX-WS et SoapUI pour les services SOAP.</li>
+							<li>Suivi de la qualité du code avec SonarQube et résolution d&#x27;incidents de performance en production.</li>
+						</ul>
+			
+					</div>
+					<div class="job">
+						<img src="./logos/restopolitan_logo.jpeg" alt="Restopolitan Logo" class="company-logo">
+			            
+						<h3>Stagiaire Informatique, Restopolitan</h3>
+						<h4>
+							2008-Apr
+								<span class="endDate"> - 2008-Sep</span>
+						</h4>
+			
+						<p>Support technique et maintenance pour une startup spécialisée dans la gestion de réservations de restaurants.</p>
+			
+						<h4>HIGHLIGHTS</h4>
+						<ul class="highlights">
+							<li>Maintenance et installation de systèmes informatiques.</li>
+							<li>Support aux logiciels internes de gestion des réservations.</li>
+						</ul>
+			
+					</div>
+			</section>
+			<section id="skills">
+			    <h2><i class="fa fa-cogs left"></i> SKILLS</h2>
+			    <div class="skills-container">
+			        <div class="skill-category">
+			            <h4>Architecture Logicielle</h4>
+			            <div class="keywords-list">
+			                <span class="keyword">Architecture orientée services (SOA / microservices)</span>
+			                <span class="keyword">Urbanisation du SI</span>
+			                <span class="keyword">Architecture data et gouvernance de la donnée</span>
+			                <span class="keyword">API design &amp; bus de messages</span>
+			                <span class="keyword">Conception orientée objet</span>
+			                <span class="keyword">Sécurité et conformité (PSSI, ISO, SecNumCloud, DevSecOps)</span>
+			                <span class="keyword">Scalabilité (FinOps) et maintenabilité applicative</span>
+			            </div>
+			        </div>
+			        <div class="skill-category">
+			            <h4>Cloud &amp; DevOps</h4>
+			            <div class="keywords-list">
+			                <span class="keyword">AWS (ECS, Fargate, Lambda, S3, CloudFront, Cognito, Kafka, Kinesis, Elasticsearch)</span>
+			                <span class="keyword">Azure (AKS, APIM)</span>
+			                <span class="keyword">GCP</span>
+			                <span class="keyword">Outscale</span>
+			                <span class="keyword">Docker</span>
+			                <span class="keyword">Kubernetes</span>
+			                <span class="keyword">Terraform</span>
+			                <span class="keyword">Ansible</span>
+			                <span class="keyword">Jenkins</span>
+			                <span class="keyword">Git</span>
+			                <span class="keyword">Gitlab CI</span>
+			                <span class="keyword">CI/CD</span>
+			                <span class="keyword">Infrastructure as Code (Terraform)</span>
+			            </div>
+			        </div>
+			        <div class="skill-category">
+			            <h4>API &amp; Intégration</h4>
+			            <div class="keywords-list">
+			                <span class="keyword">Conception d&#x27;API (REST, OpenAPI, Swagger)</span>
+			                <span class="keyword">Gestion d&#x27;API (Kong, KrakenD, Azure APIM, Gravitee, Tyk)</span>
+			                <span class="keyword">Architecture orientée événements</span>
+			                <span class="keyword">Apache Kafka</span>
+			                <span class="keyword">Confluent Cloud</span>
+			                <span class="keyword">RabbitMQ</span>
+			                <span class="keyword">CQRS</span>
+			                <span class="keyword">Event Sourcing</span>
+			                <span class="keyword">SOA (SOAP, JAX-WS)</span>
+			            </div>
+			        </div>
+			        <div class="skill-category">
+			            <h4>Programmation &amp; Frameworks</h4>
+			            <div class="keywords-list">
+			                <span class="keyword">Java</span>
+			                <span class="keyword">Golang</span>
+			                <span class="keyword">Node.js</span>
+			                <span class="keyword">JavaScript</span>
+			                <span class="keyword">Spring (Boot, Core, MVC, Security, Batch)</span>
+			                <span class="keyword">Python (bases)</span>
+			                <span class="keyword">Shell/Bash</span>
+			                <span class="keyword">JSON Schema</span>
+			                <span class="keyword">OpenAPI Specification (OAS)</span>
+			            </div>
+			        </div>
+			        <div class="skill-category">
+			            <h4>Gestion des Identités et Accès (IAM)</h4>
+			            <div class="keywords-list">
+			                <span class="keyword">OAuth2.0</span>
+			                <span class="keyword">OpenID Connect (OIDC)</span>
+			                <span class="keyword">SAML</span>
+			                <span class="keyword">LDAP</span>
+			                <span class="keyword">Open Policy Agent (OPA)</span>
+			                <span class="keyword">OpenAM/OpenDJ</span>
+			            </div>
+			        </div>
+			        <div class="skill-category">
+			            <h4>Bases de Données</h4>
+			            <div class="keywords-list">
+			                <span class="keyword">SQL (MySQL, PostgreSQL, MariaDB, Oracle)</span>
+			                <span class="keyword">NoSQL (MongoDB, DynamoDB, Elasticsearch)</span>
+			                <span class="keyword">NewSQL (CockroachDB, ArangoDB)</span>
+			                <span class="keyword">Graph (MemGraph)</span>
+			            </div>
+			        </div>
+			        <div class="skill-category">
+			            <h4>Méthodologies &amp; Outils</h4>
+			            <div class="keywords-list">
+			                <span class="keyword">Agile (Scrum, Kanban)</span>
+			                <span class="keyword">Domain-Driven Design (DDD)</span>
+			                <span class="keyword">Architecture d&#x27;entreprise (TOGAF, C4 Model)</span>
+			                <span class="keyword">Jira</span>
+			                <span class="keyword">Backstage</span>
+			                <span class="keyword">Stoplight</span>
+			                <span class="keyword">SonarQube</span>
+			                <span class="keyword">Enterprise Architect</span>
+			                <span class="keyword">Draw.io</span>
+			                <span class="keyword">Archimate</span>
+			            </div>
+			        </div>
+			    </div>
+			</section>
+			<section id="education">
+			    <h2><i class="fa fa-graduation-cap left"></i> EDUCATION</h2>
+			    <div class="education-item">
+			        <h3>Diplôme d&#x27;Ingénieur, Infrastructures Réseaux et Génie Logiciel</h3>
+			        <h4>ENSEIRB-MATMECA</h4>
+			        <div class="meta">
+			            <span></span>
+			        </div>
+			    </div>
+			    <div class="education-item">
+			        <h3>Baccalauréat, Sciences Informatiques</h3>
+			        <h4>Lycée Jules Ferry Versailles</h4>
+			        <div class="meta">
+			            <span></span>
+			        </div>
+			    </div>
+			    <div class="education-item">
+			        <h3>DUT, Électronique et Informatique Industrielle</h3>
+			        <h4>IUT de Ville d&#x27;Avray</h4>
+			        <div class="meta">
+			            <span></span>
+			        </div>
+			    </div>
+			</section>
+			<section id="languages">
+				<h2><i class="fa fa-language left"></i> LANGUAGES</h2>
+			
+				<h3>🇫🇷 Français</h3>
+				<h4>Level: Langue maternelle</h4>
+				<h3>🇬🇧 Anglais</h3>
+				<h4>Level: Courant</h4>
+			</section>
+			<section id="interests">
+				<h2><i class="fa fa-star left"></i> INTERESTS</h2>
+				<h3 class="skills">Bricolage, fabrication et brassage maison</h3>
+				 	<h3 class="skills">Squash et tennis de table</h3>
+				 	<h3 class="skills">Randonnée et trekking</h3>
+				 	<h3 class="skills">Dégustation de vins et gastronomie</h3>
+				 	<h3 class="skills">Festivals de musique et cinéma</h3>
+				 
+			</section>
+			<section id="references">
+				<h2><i class="fa fa-thumbs-up left"></i> REFERENCES</h2>
+				<blockquote class="reference-item">
+					Nico s&#x27;est très bien intégré à notre équipe d&#x27;Architecture de Solutions et a rapidement fait la différence. Nico est un technologue talentueux et hautement qualifié qui apportera de la valeur à tout environnement de travail.
+					<div class="name"><br>- Tim Chaffe, Architecte en Chef IT &amp; Digital, University of Auckland</div>
+				</blockquote>
+				<blockquote class="reference-item">
+					Nicolas Dreno est un employé de The Warehouse Group depuis mai 2021. Ce fut un plaisir de travailler avec lui, apportant son souci du détail et sa passion à tout ce dans quoi il s&#x27;est impliqué. Il a été crucial dans la mise en œuvre de notre plateforme de gestion des données de référence (MDM), l&#x27;évolution de notre plateforme de streaming d&#x27;événements en temps réel (Confluent Kafka), le découplage des API internes et externes à l&#x27;aide de la gestion d&#x27;API cloud (Azure et AWS), la croissance et l&#x27;éducation dans nos domaines de gouvernance des données, l&#x27;amélioration des compétences en modélisation des données et en automatisation DevOps (pour n&#x27;en citer que quelques-uns). Ses compétences en communication et relationnelles sont excellentes, et il a été un leader de confiance en architecture, en ingénierie logicielle et en gestion des données. Je peux fortement recommander Nicolas pour tout rôle lié à l&#x27;architecture technique ou à l&#x27;ingénierie car il est incroyablement intelligent et compétent dans tous les domaines techniques sur lesquels j&#x27;ai travaillé avec lui. Il est très respecté ici chez TWG à tous les niveaux de direction et au sein des équipes et nous manquera énormément. Nous lui souhaitons le meilleur dans ses futures entreprises et espérons que nos chemins se croiseront à nouveau un jour.
+					<div class="name"><br>- Jon Sandberg, Domain Chapter Lead, TWG</div>
+				</blockquote>
+				<blockquote class="reference-item">
+					J&#x27;ai eu l&#x27;opportunité et la chance de travailler avec Nicolas sur la transformation et l&#x27;agilité du système et il m&#x27;a très concrètement aidé à traduire notre schéma directeur en projets concrets (API / DATA / DevSecOps). Il a été aussi un vrai évangéliste du développement agile des applications à forte valeur métier. C&#x27;est très précieux de travailler avec une personne comme Nicolas qui allie les Soft Skills et les Hard Skills avec un vrai pragmatisme au moment de l&#x27;exécution.
+					<div class="name"><br>- Ibrahima Ndiaye, Responsable de l&#x27;Architecture, ENGIE B2C</div>
+				</blockquote>
+				<blockquote class="reference-item">
+					J&#x27;ai eu la chance d&#x27;embaucher Nicolas Dreno en 2018 en tant qu&#x27;Architecte de Solutions Digitales. En constituant une nouvelle équipe d&#x27;architectes à partir de zéro, j&#x27;ai cherché loin et large des architectes obsédés par la vision client, axés sur les résultats, et ayant en même temps un profond intérêt pour l&#x27;ingénierie et la technologie afin de résoudre toutes sortes de défis commerciaux. Et nous en avions beaucoup à cette époque. Nicolas correspondait presque parfaitement au profil. Nicolas avait ce désir insatiable d&#x27;apprendre et d&#x27;expérimenter, puis de l&#x27;utiliser pour développer des capacités internes en convertissant les apprentissages en modèles documentés et acceptés pour les équipes de livraison et les autres Architectes de Solutions à consommer facilement. Je partageais profondément son aversion pour le mélange de mots à la mode dans les discussions. Au lieu de cela, il est resté concentré sur la résolution de certains des défis les plus urgents qu&#x27;il a relevés, comme la mise en place de plateformes d&#x27;intégration dans le cloud AWS, la création d&#x27;un écosystème d&#x27;API sécurisé et d&#x27;un hub de données, pour n&#x27;en nommer que quelques-uns. Désolé de vous voir partir, une véritable perte pour nous ici en Aotearoa !
+					<div class="name"><br>- Ratan Kumar, Responsable de l&#x27;Architecture, University of Auckland</div>
+				</blockquote>
+				<blockquote class="reference-item">
+					J&#x27;ai travaillé avec Nico pendant un an sur des solutions complexes de gestion des données de référence. J&#x27;ai été impressionné par la capacité de Nico à se mettre rapidement à niveau. Il a façonné et perfectionné l&#x27;équipe d&#x27;intégration, les a gérées pour livrer une solution de haute qualité et durable tout en étant un précurseur des nouvelles technologies et processus. Nico est un professionnel orienté qualité, pragmatique dans sa réflexion, un manager pratique, digne de confiance et respecté par les parties prenantes seniors et les membres de l&#x27;équipe. Je recommande fortement Nico pour l&#x27;architecture d&#x27;intégration complexe.
+					<div class="name"><br>- Tarek Ahmed, Chef de Projet, TWG</div>
+				</blockquote>
+				<blockquote class="reference-item">
+					Nicolas Dreno a travaillé dans mon équipe de janvier 2012 à mars 2016, date à laquelle il a démissionné en très bons termes d&#x27;ICDC pour raisons familiales. A l&#x27;époque, j&#x27;étais responsable de l&#x27;équipe de Direction de Programmes, en charge de projets stratégiques majeurs. Très au fait des nouvelles pratiques technologiques, Nicolas s&#x27;est généralement positionné en leader, partageant et expliquant ses idées. Tout au long de sa carrière à ICDC, Nicolas n&#x27;a pas hésité à saisir les opportunités pour progresser à tous les niveaux (fonctionnel, technique, méthodologique, relationnel, etc.), quitte à remettre en question les cadres existants. Les résultats furent particulièrement visibles sur le projet CPF pour le Ministère du Travail, où il s&#x27;est rapidement imposé comme un pilier de l&#x27;équipe. Dès lors, il n&#x27;a pas hésité à promouvoir les pratiques innovantes au service des projets et plus largement de l&#x27;entreprise. Ce fut notamment le cas pour le développement et la mise en œuvre de solutions B2B et de confiance avec des partenaires externes (web services, fédération d&#x27;identité, France Connect, etc.). Doté d&#x27;un fort esprit lean et désireux de travailler plus efficacement, Nicolas n&#x27;a eu aucune difficulté à évoluer dans un environnement agile, cherchant l&#x27;amélioration continue pour identifier de nouvelles méthodes et outils et les faire connaître à son entourage. Nicolas a quitté ICDC avec une expertise architecturale significative, faisant de lui un expert technique sur de nombreux sujets. Depuis, j&#x27;ai eu plusieurs occasions d&#x27;échanger avec Nicolas sur son parcours et ses projets de carrière. Je recommande Nicolas pour tout poste de conception informatique en tant qu&#x27;architecte technique et fonctionnel, sans aucun doute quant à sa capacité à s&#x27;adapter à tout nouveau contexte.
+					<div class="name"><br>- Hélène Piquer, Responsable de Département, Ministère du Travail (ICDC)</div>
+				</blockquote>
+				<blockquote class="reference-item">
+					Nicolas a dirigé l&#x27;équipe de développement Scrum qui a construit le CPF. Il a été le moteur de la mise en œuvre de Scrum et de ses valeurs au sein de l&#x27;équipe Agile, ce qui représentait un énorme défi dans le contexte d&#x27;Informatique CDC.
+					<div class="name"><br>- Olivier Ledru, Coach Agile, Caisse Des Dépôts et Consignations</div>
+				</blockquote>
+			</section>
+		</div>
+	</body>
+</html>
