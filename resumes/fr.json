@@ -28,7 +28,7 @@
             "startDate": "2023-11",
             "summary": "Conception d'un socle technique unifié pour un fournisseur européen de cloud souverain, garantissant la cohérence, la sécurité et la pérennité des architectures. Responsable des stratégies d'architecture et d'innovation autour des services cloud natifs et de la gouvernance des API.",
             "highlights": [
-                "Définition d'une architecture cible modulaire et sécurisée pour des services cloud natifs et des offres PaaS (rédaction HLD/LLDs).",
+                "Définition d'une architecture cible modulaire et sécurisée pour des services cloud natifs et des offres PaaS (rédaction ADR/HLD/LLDs).",
                 "Conception et mise en œuvre d'architectures pérennes et évolutives pour la gestion et la standardisation des API.",
                 "Accompagnement des équipes dans l'application des bonnes pratiques d'architecture, de sécurité et d'automatisation.",
                 "Animation d'un cadre de gouvernance technique et définition des socles communs au sein du SI.",

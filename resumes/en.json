@@ -28,7 +28,8 @@
             "startDate": "2023-11",
             "summary": "Leading architectural strategies and innovations for a Sovereign Cloud provider, with a focus on open-source solutions and cloud-native services.",
             "highlights": [
-                "Enhancing cloud-native services, PaaS offerings, and API management solutions.",
+                "Definition of a modular and secure target architecture for cloud-native services and PaaS offerings (writing ADRs/HLDs/LLDs).",
+                "Design and implementation of sustainable and scalable architectures for API management and standardization.",
                 "Streamlining infrastructure and improving service reliability through collaboration with cross-functional teams.",
                 "Driving adoption of scalable, secure, and open-source technologies aligned with industry best practices.",
                 "Contributing to conformity requirements like SecNumCloud qualification."
