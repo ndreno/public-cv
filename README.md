@@ -1,7 +1,10 @@
 # Automagic CV
 
+## CI
 
-# Repo structure
+[![Build and Deploy Resume](https://github.com/ndreno/public-cv/actions/workflows/build-resume.yml/badge.svg)](https://github.com/ndreno/public-cv/actions/workflows/build-resume.yml)
+
+## Repo structure
 
 ```text
 public-cv/
