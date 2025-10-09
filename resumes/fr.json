@@ -196,17 +196,17 @@
     "education": [
         {
             "institution": "ENSEIRB-MATMECA",
-            "area": "Infrastructures Réseaux et Génie Logiciel",
+            "area": "Réseaux & Système d'information",
             "studyType": "Diplôme d'Ingénieur"
         },
         {
             "institution": "Lycée Jules Ferry Versailles",
-            "area": "Sciences Informatiques",
-            "studyType": "Baccalauréat"
+            "area": "Informatique et Réseaux pour l'Industrie et les Services techniques",
+            "studyType": "Brevet de Technicien Supérieur"
         },
         {
             "institution": "IUT de Ville d'Avray",
-            "area": "Électronique et Informatique Industrielle",
+            "area": "Génie Électronique et Informatique Industrielle",
             "studyType": "DUT"
         }
     ],
@@ -334,7 +334,7 @@
     ],
     "interests": [
         {
-            "name": "Bricolage, fabrication et brassage maison"
+            "name": "Bricolage, brassage maison"
         },
         {
             "name": "Squash et tennis de table"
