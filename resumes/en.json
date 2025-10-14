@@ -275,18 +275,20 @@
     "certifications": [
         {
             "title": "AWS Solution Architect - Associate",
-            "date": "2021",
-            "awarder": "Amazon Web Services"
+            "certificationer": "Amazon Web Services",
+            "date": "2024-03",
+            "credentialUrl": "https://cp.certmetrics.com/amazon/en/public/verify/credential/EKLHKMM1JERE1NS0"
         },
         {
-            "title": "Professional Scrum Developer",
-            "date": "2019",
-            "awarder": "Scrum.org"
+            "title": "Professional Scrum Developer",           
+            "certificationer": "Scrum.org",
+            "date": "2015-01",
+            "credentialUrl": "https://www.scrum.org/user/153014"
         },
         {
             "title": "First Aid Certification",
-            "date": "2015",
-            "awarder": "French Red Cross"
+            "certificationer": "French Red Cross",
+            "date": "2012-08"
         }
     ],
     "interests": [
