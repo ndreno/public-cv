@@ -138,16 +138,16 @@
         },
         {
             "company": "Qard",
-            "position": "Directeur Technique (Head of Engineering)",
+            "position": "Advisor Technique",
             "location": "Paris, France",
             "logo": "./logos/qard_logo.jpeg",
             "startDate": "2021-02",
             "endDate": "2025-01",
-            "summary": "Encadrement des équipes, mentorat et définition de la stratégie technologique pour une fintech innovante, au service de la transformation du financement digital.",
+            "summary": "Rôle d'advisor mené en parallèle de mes missions principales, avec du mentorat auprès de l'équipe d'ingénierie et la définition de la stratégie technique d'une fintech.",
             "highlights": [
-                "Direction de l'équipe d'ingénierie pour concevoir et livrer des solutions financières innovantes.",
-                "Spécialisation dans le développement d'API évolutives et l'architecture de systèmes robustes, performants et sécurisés.",
-                "Pilotage de la stratégie technique, intégration des systèmes et livraison de produits financiers de nouvelle génération."
+                "Accompagnement de l'équipe d'ingénierie sur la conception et la livraison des produits financiers.",
+                "Conseil sur le développement d'API évolutives et l'architecture de systèmes sécurisés et performants.",
+                "Contribution aux décisions de stratégie technique et d'intégration des systèmes."
             ],
             "technologies": [
                 "PHP",

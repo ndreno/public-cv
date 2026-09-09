@@ -137,16 +137,16 @@
         },
         {
             "company": "Qard",
-            "position": "Head of Engineering",
+            "position": "Engineering Advisor",
             "location": "Paris, France",
             "logo": "./logos/qard_logo.jpeg",
             "startDate": "2021-02",
             "endDate": "2025-01",
-            "summary": "Fostering collaboration, mentoring talent and shaping the future of digital finance through technology at Qard, a dynamic fintech company.",
+            "summary": "Advisory role held alongside my main engagements, mentoring the engineering team and shaping the technical strategy of a fintech company.",
             "highlights": [
-                "Leading the engineering team to design and deliver innovative financial solutions.",
-                "Specialising in scalable API development and robust system architecture to power seamless, secure, and high-performance platforms.",
-                "Driving technical strategy, ensuring system integration, and enabling the delivery of cutting-edge financial products."
+                "Advised the engineering team on the design and delivery of financial products.",
+                "Guided scalable API development and system architecture for secure, high-performance platforms.",
+                "Contributed to technical strategy and system integration decisions."
             ],
             "technologies": [
                 "PHP",
