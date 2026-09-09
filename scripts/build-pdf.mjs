@@ -21,6 +21,14 @@ for (const w of r.work ?? []) {
 }
 r.certificates = (r.certifications ?? []).map((c) => ({ ...c, startDate: c.date ?? c.startDate }));
 delete r.certifications;
+// The HTML theme reads `level`, this template reads `fluency`. Flags are fine in
+// a browser but render as tofu here, since the PDF embeds only its own fonts.
+r.languages = (r.languages ?? []).map((l) => ({
+  ...l,
+  language: (l.language ?? "").replace(/[\u{1F1E6}-\u{1F1FF}\u{1F300}-\u{1FAFF}\u{2600}-\u{27BF}]/gu, "").trim(),
+  fluency: l.fluency ?? l.level ?? "",
+}));
+
 r.interests ??= [];
 r.references ??= [];
 

@@ -166,7 +166,7 @@
   {
     let parts = ()
     if "yearsOfExperience" in basics {
-      parts.push(str(basics.yearsOfExperience) + " ans d'expérience")
+      parts.push(str(basics.yearsOfExperience) + " years of experience")
     }
     if "location" in basics {
       let loc = basics.location
@@ -384,7 +384,7 @@
     })
     if "credentialUrl" in cert {
       linebreak()
-      text(size: 8pt, link(cert.credentialUrl)[Voir le certificat ↗])
+      text(size: 8pt, link(cert.credentialUrl)[View credential ↗])
     }
     v(6pt)
   }
@@ -402,7 +402,7 @@
 
 // --- References ---
 #if references.len() > 0 {
-  [== Recommandations]
+  [== References]
 
   for ref in references {
     block(
