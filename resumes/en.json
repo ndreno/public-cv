@@ -33,21 +33,27 @@
             "startDate": "2026-01",
             "summary": "Consulting architect, currently lead architect on the Magellan programme, an enterprise infrastructure and application platform.",
             "highlights": [
-                "Leading the target architecture across datacentre, network, Kubernetes platform, IAM, observability and cybersecurity domains.",
-                "Authoring the architecture corpus as governed, reviewable documents: 85 ADRs, 9 LLDs and the HLD, versioned in Git and validated in CI.",
-                "Establishing a spec-driven, AI-augmented delivery method: machine-readable conventions for agents, blocking quality gates, and golden-path templates shared across the platform repositories.",
-                "Designing infrastructure data as code, with NetBox as the CMDB source of truth reconciled by OpenTofu and continuous drift detection."
+                "Lead architect of the target architecture across the network, datacentre, cloud, container platform, IAM, PKI, software factory, observability and cybersecurity domains.",
+                "Established architecture decisions as governed, reviewable artifacts: ADRs, LLDs and the HLD versioned in Git, cross-referenced, and validated in CI alongside the code they govern.",
+                "Designed and bootstrapped the container platform on bare metal, from the first cluster to workload node provisioning: RKE2 and Rancher, GitOps reconciliation with ArgoCD, Cilium networking and MetalLB.",
+                "Made infrastructure data authoritative as code, with NetBox as the CMDB source of truth reconciled by OpenTofu, a plan published on every pull request, and scheduled drift detection.",
+                "Delivered network access policy as code, with a pipeline gate that fails when the declared perimeter and the enforced one diverge.",
+                "Shipped a Kubernetes operator that provisions StorageGRID S3 tenants, buckets and credentials from custom resources, replacing manual operations in the vendor console.",
+                "Built the platform's own software factory (self-hosted Forgejo, registry, documentation portal, Keycloak SSO, CI runners) with golden-path templates, shared linters and machine-readable conventions, so that coding agents work under the same blocking gates as the team."
             ],
             "technologies": [
-                "Kubernetes",
+                "RKE2",
+                "Rancher",
+                "ArgoCD",
+                "Cilium",
                 "OpenTofu",
                 "NetBox",
-                "Cilium",
-                "ArgoCD",
-                "Ansible",
                 "Keycloak",
-                "Forgejo",
-                "Docusaurus"
+                "OpenBao",
+                "OpenTelemetry",
+                "Go",
+                "Ansible",
+                "Forgejo"
             ]
         },
         {
