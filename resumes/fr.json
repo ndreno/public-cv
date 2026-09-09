@@ -51,25 +51,6 @@
             ]
         },
         {
-            "company": "Barbacane",
-            "position": "Founder & CTO",
-            "location": "France",
-            "logo": "./logos/barbacane_logo.png",
-            "startDate": "2026-01",
-            "summary": "Développement d'une gateway API et IA bidirectionnelle open source en Rust, où les spécifications OpenAPI et AsyncAPI sont la seule configuration.",
-            "highlights": [
-                "Conception du modèle spec-driven : les spécifications sont compilées en artefacts et appliquées comme contrats à l'exécution, sans DSL propriétaire.",
-                "Réalisation du runtime de plugins WebAssembly et de son SDK, avec séparation du control plane et du data plane."
-            ],
-            "technologies": [
-                "Rust",
-                "WebAssembly",
-                "OpenAPI",
-                "AsyncAPI",
-                "PostgreSQL"
-            ]
-        },
-        {
             "company": "NumSpot",
             "position": "Architecte logiciel & DevOps",
             "location": "France",
@@ -240,6 +221,29 @@
             "highlights": [
                 "Maintenance et installation de systèmes informatiques.",
                 "Support aux logiciels internes de gestion des réservations."
+            ]
+        }
+    ],
+    "projects": [
+        {
+            "name": "Barbacane",
+            "roles": [
+                "Founder & CTO"
+            ],
+            "logo": "./logos/barbacane_logo.png",
+            "startDate": "2026-01",
+            "url": "https://github.com/barbacane-dev/barbacane",
+            "description": "Développement d'une gateway API et IA bidirectionnelle open source en Rust, où les spécifications OpenAPI et AsyncAPI sont la seule configuration.",
+            "highlights": [
+                "Conception du modèle spec-driven : les spécifications sont compilées en artefacts et appliquées comme contrats à l'exécution, sans DSL propriétaire.",
+                "Réalisation du runtime de plugins WebAssembly et de son SDK, avec séparation du control plane et du data plane."
+            ],
+            "keywords": [
+                "Rust",
+                "WebAssembly",
+                "OpenAPI",
+                "AsyncAPI",
+                "PostgreSQL"
             ]
         }
     ],

@@ -51,25 +51,6 @@
             ]
         },
         {
-            "company": "Barbacane",
-            "position": "Founder & CTO",
-            "location": "France",
-            "logo": "./logos/barbacane_logo.png",
-            "startDate": "2026-01",
-            "summary": "Building an open source API and bidirectional AI gateway in Rust, where OpenAPI and AsyncAPI specifications are the only configuration.",
-            "highlights": [
-                "Designed the spec-driven model: specifications are compiled into artifacts and enforced as contracts at runtime, with no proprietary DSL.",
-                "Built the WebAssembly plugin runtime and its SDK, separating control plane from data plane."
-            ],
-            "technologies": [
-                "Rust",
-                "WebAssembly",
-                "OpenAPI",
-                "AsyncAPI",
-                "PostgreSQL"
-            ]
-        },
-        {
             "company": "NumSpot",
             "position": "Architect",
             "location": "France",
@@ -239,6 +220,29 @@
             "highlights": [
                 "Performed system maintenance and installations.",
                 "Supported in-house software applications for restaurant management."
+            ]
+        }
+    ],
+    "projects": [
+        {
+            "name": "Barbacane",
+            "roles": [
+                "Founder & CTO"
+            ],
+            "logo": "./logos/barbacane_logo.png",
+            "startDate": "2026-01",
+            "url": "https://github.com/barbacane-dev/barbacane",
+            "description": "Building an open source API and bidirectional AI gateway in Rust, where OpenAPI and AsyncAPI specifications are the only configuration.",
+            "highlights": [
+                "Designed the spec-driven model: specifications are compiled into artifacts and enforced as contracts at runtime, with no proprietary DSL.",
+                "Built the WebAssembly plugin runtime and its SDK, separating control plane from data plane."
+            ],
+            "keywords": [
+                "Rust",
+                "WebAssembly",
+                "OpenAPI",
+                "AsyncAPI",
+                "PostgreSQL"
             ]
         }
     ],
