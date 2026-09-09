@@ -15,17 +15,67 @@
                 "network": "LinkedIn",
                 "username": "nicolasdreno",
                 "url": "https://www.linkedin.com/in/nicolasdreno"
+            },
+            {
+                "network": "GitHub",
+                "username": "ndreno",
+                "url": "https://github.com/ndreno"
             }
         ],
         "summary": "Architecte logiciel expérimenté, guidé par la conviction que la simplicité est la sophistication ultime. Spécialisé dans la modernisation et la rationalisation de systèmes d'information complexes vers des architectures distribuées, sécurisées et maintenables. Passionné par la cohérence technique, la standardisation des pratiques et la collaboration interdomaines. Habitué à accompagner les équipes dans la définition de socles techniques, la gouvernance d'API et la mise en œuvre de solutions pérennes alignées sur les exigences métiers et de sécurité."
     },
     "work": [
         {
+            "company": "Gluendo",
+            "position": "Lead Architect",
+            "location": "France",
+            "logo": "./logos/gluendo_logo.png",
+            "startDate": "2026-01",
+            "summary": "Architecte consultant, actuellement lead architect sur le programme Magellan, une plateforme d'infrastructure et d'applications d'entreprise.",
+            "highlights": [
+                "Pilotage de l'architecture cible sur les domaines datacentre, réseau, plateforme Kubernetes, IAM, observabilité et cybersécurité.",
+                "Rédaction du corpus d'architecture sous forme de documents gouvernés et relus : 85 ADR, 9 LLD et le HLD, versionnés dans Git et validés en CI.",
+                "Mise en place d'une méthode de delivery spec-driven et augmentée par l'IA : conventions lisibles par les agents, contrôles bloquants, et templates de golden path partagés entre les repos de la plateforme.",
+                "Conception de la donnée d'infrastructure as code, avec NetBox comme source de vérité CMDB réconciliée par OpenTofu et détection de dérive en continu."
+            ],
+            "technologies": [
+                "Kubernetes",
+                "OpenTofu",
+                "NetBox",
+                "Cilium",
+                "ArgoCD",
+                "Ansible",
+                "Keycloak",
+                "Forgejo",
+                "Docusaurus"
+            ]
+        },
+        {
+            "company": "Barbacane",
+            "position": "Founder & CTO",
+            "location": "France",
+            "logo": "./logos/barbacane_logo.png",
+            "startDate": "2026-01",
+            "summary": "Développement d'une gateway API et IA bidirectionnelle open source en Rust, où les spécifications OpenAPI et AsyncAPI sont la seule configuration.",
+            "highlights": [
+                "Conception du modèle spec-driven : les spécifications sont compilées en artefacts et appliquées comme contrats à l'exécution, sans DSL propriétaire.",
+                "Réalisation du runtime de plugins WebAssembly et de son SDK, avec séparation du control plane et du data plane."
+            ],
+            "technologies": [
+                "Rust",
+                "WebAssembly",
+                "OpenAPI",
+                "AsyncAPI",
+                "PostgreSQL"
+            ]
+        },
+        {
             "company": "NumSpot",
             "position": "Architecte logiciel & DevOps",
             "location": "France",
             "logo": "./logos/numspot_logo.jpeg",
             "startDate": "2023-11",
+            "endDate": "2025-12",
             "summary": "Conception d'un socle technique unifié pour un fournisseur européen de cloud souverain, garantissant la cohérence, la sécurité et la pérennité des architectures. Responsable des stratégies d'architecture et d'innovation autour des services cloud natifs et de la gouvernance des API.",
             "highlights": [
                 "Définition d'une architecture cible modulaire et sécurisée pour des services cloud natifs et des offres PaaS (rédaction ADR/HLD/LLDs).",
@@ -323,7 +373,7 @@
             "credentialUrl": "https://cp.certmetrics.com/amazon/en/public/verify/credential/EKLHKMM1JERE1NS0"
         },
         {
-            "title": "Professional Scrum Developer",           
+            "title": "Professional Scrum Developer",
             "certificationer": "Scrum.org",
             "date": "2015-01",
             "credentialUrl": "https://www.scrum.org/user/153014"

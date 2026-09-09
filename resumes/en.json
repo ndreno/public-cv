@@ -15,17 +15,67 @@
                 "network": "LinkedIn",
                 "username": "nicolasdreno",
                 "url": "https://www.linkedin.com/in/nicolasdreno"
+            },
+            {
+                "network": "GitHub",
+                "username": "ndreno",
+                "url": "https://github.com/ndreno"
             }
         ],
         "summary": "Guided by the philosophy that 'simplicity is the ultimate sophistication,' I am an experienced Solution Architect with deep expertise in cloud-native systems, API management, and event-driven architecture. I thrive on leading technical strategy, mentoring teams, and designing scalable, secure, and innovative solutions that deliver tangible business value. A pragmatic leader passionate about simplifying complex systems and fostering a culture of collaboration and continuous improvement."
     },
     "work": [
         {
+            "company": "Gluendo",
+            "position": "Lead Architect",
+            "location": "France",
+            "logo": "./logos/gluendo_logo.png",
+            "startDate": "2026-01",
+            "summary": "Consulting architect, currently lead architect on the Magellan programme, an enterprise infrastructure and application platform.",
+            "highlights": [
+                "Leading the target architecture across datacentre, network, Kubernetes platform, IAM, observability and cybersecurity domains.",
+                "Authoring the architecture corpus as governed, reviewable documents: 85 ADRs, 9 LLDs and the HLD, versioned in Git and validated in CI.",
+                "Establishing a spec-driven, AI-augmented delivery method: machine-readable conventions for agents, blocking quality gates, and golden-path templates shared across the platform repositories.",
+                "Designing infrastructure data as code, with NetBox as the CMDB source of truth reconciled by OpenTofu and continuous drift detection."
+            ],
+            "technologies": [
+                "Kubernetes",
+                "OpenTofu",
+                "NetBox",
+                "Cilium",
+                "ArgoCD",
+                "Ansible",
+                "Keycloak",
+                "Forgejo",
+                "Docusaurus"
+            ]
+        },
+        {
+            "company": "Barbacane",
+            "position": "Founder & CTO",
+            "location": "France",
+            "logo": "./logos/barbacane_logo.png",
+            "startDate": "2026-01",
+            "summary": "Building an open source API and bidirectional AI gateway in Rust, where OpenAPI and AsyncAPI specifications are the only configuration.",
+            "highlights": [
+                "Designed the spec-driven model: specifications are compiled into artifacts and enforced as contracts at runtime, with no proprietary DSL.",
+                "Built the WebAssembly plugin runtime and its SDK, separating control plane from data plane."
+            ],
+            "technologies": [
+                "Rust",
+                "WebAssembly",
+                "OpenAPI",
+                "AsyncAPI",
+                "PostgreSQL"
+            ]
+        },
+        {
             "company": "NumSpot",
             "position": "Architect",
             "location": "France",
             "logo": "./logos/numspot_logo.jpeg",
             "startDate": "2023-11",
+            "endDate": "2025-12",
             "summary": "Leading architectural strategies and innovations for a Sovereign Cloud provider, with a focus on open-source solutions and cloud-native services.",
             "highlights": [
                 "Definition of a modular and secure target architecture for cloud-native services and PaaS offerings (writing ADRs/HLDs/LLDs).",
@@ -35,7 +85,15 @@
                 "Contributing to conformity requirements like SecNumCloud qualification."
             ],
             "technologies": [
-                "Golang", "Kubernetes", "OAS", "Scalar", "pb33f", "Terraform", "DrawIO", "Docusaurus", "Gitlab"
+                "Golang",
+                "Kubernetes",
+                "OAS",
+                "Scalar",
+                "pb33f",
+                "Terraform",
+                "DrawIO",
+                "Docusaurus",
+                "Gitlab"
             ]
         },
         {
@@ -53,7 +111,17 @@
                 "Redesigned the platform's authorization model using Open Policy Agent (OPA), introducing Policy Enforcement and Decision Points."
             ],
             "technologies": [
-                "AWS", "GCP", "Python", "NodeJs", "Github", "KrakendD", "Spotlight", "Backstage", "Docker", "Excalidraw", "Jira"
+                "AWS",
+                "GCP",
+                "Python",
+                "NodeJs",
+                "Github",
+                "KrakendD",
+                "Spotlight",
+                "Backstage",
+                "Docker",
+                "Excalidraw",
+                "Jira"
             ]
         },
         {
@@ -71,7 +139,13 @@
                 "Promoted DevOps best practices by building CI/CD pipelines and contributing to a 'Golden Path' developer platform inspired by Backstage."
             ],
             "technologies": [
-                "Java", "JavaScript", "Azure", "Swagger", "Backstage", "Atlassian", "Json-schema"
+                "Java",
+                "JavaScript",
+                "Azure",
+                "Swagger",
+                "Backstage",
+                "Atlassian",
+                "Json-schema"
             ]
         },
         {
@@ -87,7 +161,12 @@
                 "Driving technical strategy, ensuring system integration, and enabling the delivery of cutting-edge financial products."
             ],
             "technologies": [
-                "PHP", "AWS", "GCP", "S3", "Notion", "Gitlab"
+                "PHP",
+                "AWS",
+                "GCP",
+                "S3",
+                "Notion",
+                "Gitlab"
             ]
         },
         {
@@ -280,7 +359,7 @@
             "credentialUrl": "https://cp.certmetrics.com/amazon/en/public/verify/credential/EKLHKMM1JERE1NS0"
         },
         {
-            "title": "Professional Scrum Developer",           
+            "title": "Professional Scrum Developer",
             "certificationer": "Scrum.org",
             "date": "2015-01",
             "credentialUrl": "https://www.scrum.org/user/153014"
