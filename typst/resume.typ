@@ -81,7 +81,7 @@
 )
 
 #set text(
-  font: ("Inter", "Helvetica Neue", "Helvetica", "Arial"),
+  font: "Inter",
   size: 9.5pt,
   fill: teal,
   lang: "fr",
@@ -95,7 +95,7 @@
   v(6pt)
   block(below: 8pt, {
     text(
-      font: ("Rethink Sans", "Helvetica Neue", "Arial"),
+      font: "Rethink Sans",
       size: 13pt,
       weight: 600,
       fill: navy,
@@ -152,7 +152,7 @@
 // --- Header ---
 #align(center, {
   text(
-    font: ("Rethink Sans", "Helvetica Neue", "Arial"),
+    font: "Rethink Sans",
     size: 22pt,
     weight: 700,
     fill: navy,

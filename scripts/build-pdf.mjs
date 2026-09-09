@@ -33,6 +33,8 @@ const res = spawnSync("typst", [
   "compile",
   "--root", process.cwd(),
   "--font-path", "typst/fonts",
+  // Render from the vendored fonts only, so CI and a laptop produce the same PDF.
+  "--ignore-system-fonts",
   "--input", "resume=/build/.resume.typst.json",
   "typst/resume.typ",
   out,
