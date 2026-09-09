@@ -61,7 +61,7 @@
             "summary": "Leading architectural strategies and innovations for a Sovereign Cloud provider, with a focus on open-source solutions and cloud-native services.",
             "highlights": [
                 "Defined the API standard and moved the engineering teams to contract-first design, with the OpenAPI specification as the source of truth.",
-                "Designed and built the API gateway in Go, including the full authentication and authorisation layer.",
+                "Architected the API gateway in Go and led the team that built it, authentication and authorisation included, through design reviews and code review.",
                 "Set the modular, secure target architecture for cloud-native and PaaS offerings, and contributed to SecNumCloud qualification.",
                 "Streamlined infrastructure and improved service reliability working across cross-functional teams."
             ],
