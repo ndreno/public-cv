@@ -58,15 +58,16 @@
         },
         {
             "company": "NumSpot",
-            "position": "Architecte logiciel & DevOps",
+            "position": "Architecte API / Staff Engineer",
             "location": "France",
             "logo": "./logos/numspot_logo.jpeg",
             "startDate": "2023-11",
             "endDate": "2025-12",
             "summary": "Conception d'un socle technique unifié pour un fournisseur européen de cloud souverain, garantissant la cohérence, la sécurité et la pérennité des architectures. Responsable des stratégies d'architecture et d'innovation autour des services cloud natifs et de la gouvernance des API.",
             "highlights": [
-                "Définition d'une architecture cible modulaire et sécurisée pour des services cloud natifs et des offres PaaS (rédaction ADR/HLD/LLDs).",
-                "Conception et mise en œuvre d'architectures pérennes et évolutives pour la gestion et la standardisation des API.",
+                "Définition du standard d'API et accompagnement des équipes vers une conception contract-first, avec la spécification OpenAPI comme source de vérité.",
+                "Conception et réalisation de la gateway API en Go, avec l'intégralité de la couche d'authentification et d'autorisation.",
+                "Définition d'une architecture cible modulaire et sécurisée pour des services cloud natifs et des offres PaaS, formalisée en ADR, HLD et LLD.",
                 "Accompagnement des équipes dans l'application des bonnes pratiques d'architecture, de sécurité et d'automatisation.",
                 "Animation d'un cadre de gouvernance technique et définition des socles communs au sein du SI.",
                 "Promotion des technologies open source et alignement avec les standards de sécurité (SecNumCloud).",
@@ -74,13 +75,13 @@
             ],
             "technologies": [
                 "Golang",
+                "OpenAPI (OAS)",
                 "Kubernetes",
-                "OAS",
+                "Terraform",
                 "Scalar",
                 "pb33f",
-                "Terraform",
-                "DrawIO",
-                "Docusaurus"
+                "Docusaurus",
+                "GitLab"
             ]
         },
         {
@@ -99,12 +100,14 @@
                 "Refonte du modèle d'autorisation de la plateforme à l'aide d'Open Policy Agent (OPA), avec mise en place des points d'application et de décision de policies."
             ],
             "technologies": [
+                "Python",
+                "Django",
+                "Golang",
                 "AWS",
                 "GCP",
-                "Python",
-                "NodeJs",
-                "Github",
-                "KrakendD",
+                "Node.js",
+                "GitHub",
+                "KrakenD",
                 "Spotlight",
                 "Backstage",
                 "Docker",
@@ -279,10 +282,7 @@
                 "Urbanisation du SI",
                 "Architecture data et gouvernance de la donnée",
                 "API design & bus de messages",
-                "Sécurité et conformité (PSSI",
-                "ISO",
-                "SecNumCloud",
-                "DevSecOps)",
+                "Sécurité et conformité (PSSI, ISO, SecNumCloud, DevSecOps)",
                 "Scalabilité (FinOps) et maintenabilité applicative"
             ]
         },
@@ -290,12 +290,10 @@
             "name": "Cloud & DevOps",
             "keywords": [
                 "AWS",
-                "Azure (AKS",
-                "APIM)",
+                "Azure (AKS, APIM)",
                 "GCP",
                 "Outscale",
-                "Kubernetes (RKE2",
-                "Rancher)",
+                "Kubernetes (RKE2, Rancher)",
                 "Docker",
                 "Helm",
                 "GitOps (ArgoCD)",
@@ -304,7 +302,7 @@
                 "Ansible",
                 "Cilium",
                 "MetalLB",
-                "provisioning bare metal (bootc)",
+                "Provisioning bare metal (bootc)",
                 "GitLab CI",
                 "Forgejo Actions",
                 "CI/CD"
@@ -313,15 +311,8 @@
         {
             "name": "API & Intégration",
             "keywords": [
-                "Conception d'API (REST",
-                "OpenAPI",
-                "AsyncAPI",
-                "JSON Schema)",
-                "Gestion d'API (Kong",
-                "KrakenD",
-                "Azure APIM",
-                "Gravitee",
-                "Tyk)",
+                "Conception d'API (REST, OpenAPI, AsyncAPI, JSON Schema)",
+                "Gestion d'API (Kong, KrakenD, Azure APIM, Gravitee, Tyk)",
                 "Gateways IA",
                 "Model Context Protocol (MCP)",
                 "Architecture orientée événements",
@@ -334,18 +325,14 @@
         {
             "name": "Programmation & Frameworks",
             "keywords": [
+                "Python (Django)",
                 "Rust",
                 "Golang",
                 "WebAssembly (WASM)",
                 "Java",
                 "Node.js",
                 "JavaScript/TypeScript",
-                "Spring (Boot",
-                "Core",
-                "MVC",
-                "Security",
-                "Batch)",
-                "Python",
+                "Spring (Boot, Core, MVC, Security, Batch)",
                 "Shell/Bash"
             ]
         },
@@ -353,12 +340,12 @@
             "name": "Ingénierie augmentée par l'IA",
             "keywords": [
                 "Agents de code LLM (Claude Code)",
-                "conventions et garde-fous lisibles par la machine",
-                "développement spec-driven",
-                "conception pilotée par ADR et LLD",
-                "context engineering",
-                "schema as code",
-                "inférence locale on-device"
+                "Conventions et garde-fous lisibles par la machine",
+                "Développement spec-driven",
+                "Conception pilotée par ADR et LLD",
+                "Context engineering",
+                "Schema as code",
+                "Inférence locale on-device"
             ]
         },
         {
@@ -383,37 +370,28 @@
                 "Grafana",
                 "SLO et error budgets",
                 "SBOM (syft)",
-                "signature keyless (cosign)",
-                "audit de dépendances et de licences (cargo-deny)",
-                "détection de secrets (gitleaks)",
-                "admission control Kubernetes"
+                "Signature keyless (cosign)",
+                "Audit de dépendances et de licences (cargo-deny)",
+                "Détection de secrets (gitleaks)",
+                "Admission control Kubernetes"
             ]
         },
         {
             "name": "Bases de Données",
             "keywords": [
-                "SQL (PostgreSQL",
-                "MySQL",
-                "MariaDB",
-                "Oracle)",
-                "NoSQL (MongoDB",
-                "DynamoDB",
-                "Elasticsearch)",
-                "NewSQL (CockroachDB",
-                "ArangoDB)",
+                "SQL (PostgreSQL, MySQL, MariaDB, Oracle)",
+                "NoSQL (MongoDB, DynamoDB, Elasticsearch)",
+                "NewSQL (CockroachDB, ArangoDB)",
                 "Graph (MemGraph)"
             ]
         },
         {
             "name": "Méthodologies & Outils",
             "keywords": [
-                "Agile (Scrum",
-                "Kanban)",
+                "Agile (Scrum, Kanban)",
                 "Domain-Driven Design (DDD)",
-                "Architecture d'entreprise (TOGAF",
-                "C4",
-                "ArchiMate)",
-                "pratique ADR/LLD/HLD",
+                "Architecture d'entreprise (TOGAF, C4, ArchiMate)",
+                "Pratique ADR/LLD/HLD",
                 "NetBox",
                 "Backstage",
                 "Docusaurus",
