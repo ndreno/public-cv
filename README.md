@@ -35,8 +35,10 @@ public-cv/
 
 `resumes/us.json` is a variant targeted at US applications: one headline role per
 entry, impact-led highlights, no address or photo, and the earlier roles folded
-into a single line. It is **not** published on the site. It is rendered to PDF and
-attached to applications by hand.
+into a single line. It is rendered to PDF and published at a stable URL,
+<https://ndreno.github.io/public-cv/us.pdf>, deliberately absent from the
+language switcher: it is a target market, not a language. US applications want a
+file upload rather than a link, so the usual path is still to attach the PDF.
 
 ```shell
 npm run build:pdf     # build/us.pdf, rendered with Typst

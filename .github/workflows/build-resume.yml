@@ -35,6 +35,16 @@ jobs:
       - name: Build French Resume
         run: npm run build:fr
 
+      # The US resume ships as a PDF at a stable URL. It is deliberately absent
+      # from the language switcher: it is a target market, not a language.
+      - name: Install Typst
+        run: |
+          curl -fsSL "https://github.com/typst/typst/releases/download/v0.14.2/typst-x86_64-unknown-linux-musl.tar.xz" \
+            | tar -xJ --strip-components=1 -C /usr/local/bin typst-x86_64-unknown-linux-musl/typst
+
+      - name: Build US Resume (PDF)
+        run: npm run build:pdf
+
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v3
         with:
