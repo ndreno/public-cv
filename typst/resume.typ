@@ -66,7 +66,7 @@
 // --- Page Setup ---
 #set page(
   paper: "a4",
-  margin: (top: 16mm, bottom: 14mm, left: 18mm, right: 18mm),
+  margin: (top: 13mm, bottom: 11mm, left: 15mm, right: 15mm),
   footer: context {
     let total = counter(page).final().first()
     grid(
@@ -87,7 +87,7 @@
   lang: "fr",
 )
 
-#set par(leading: 0.65em, justify: true)
+#set par(leading: 0.58em, justify: true)
 #show link: set text(fill: blue)
 
 // --- Heading Styles ---
@@ -283,10 +283,10 @@
       }
     }
 
-    v(6pt)
+    v(4pt)
     if i < work.len() - 1 {
       line(length: 100%, stroke: 0.5pt + light-gray)
-      v(4pt)
+      v(3pt)
     }
   }
 }
@@ -334,7 +334,7 @@
     v(6pt)
     if i < projects.len() - 1 {
       line(length: 100%, stroke: 0.5pt + light-gray)
-      v(4pt)
+      v(3pt)
     }
   }
 }
@@ -365,7 +365,7 @@
         h(3pt)
       }
     }
-    v(8pt)
+    v(5pt)
   }
 }
 
@@ -398,18 +398,20 @@
 #if certifications.len() > 0 {
   [== Certifications]
 
+  // One line per certification: three stacked lines for three short facts was
+  // spilling the document onto an extra page.
   for cert in certifications {
     text(size: 10pt, weight: 600, fill: navy, cert.at("title", default: ""))
-    linebreak()
-    text(size: 9pt, fill: color-gray, {
+    h(5pt)
+    text(size: 8.5pt, fill: color-gray, {
       cert.at("issuer", default: "")
       if "date" in cert { [ · #format-date(cert.date)] }
     })
     if "credentialUrl" in cert {
-      linebreak()
+      h(5pt)
       text(size: 8pt, link(cert.credentialUrl)[View credential ↗])
     }
-    v(6pt)
+    v(3pt)
   }
 }
 

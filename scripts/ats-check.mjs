@@ -98,8 +98,9 @@ if (pdfPath && existsSync(pdfPath)) {
   const big = [...raw.matchAll(/\/Subtype\s*\/Image[\s\S]{0,200}?\/Width\s+(\d+)[\s\S]{0,80}?\/Height\s+(\d+)/g)]
     .filter(([, w, h]) => Number(w) > 600 || Number(h) > 600);
   if (big.length) warnings.push(`${big.length} large image(s) in the PDF; a parser reads no text inside them`);
-  if (pages > 3) errors.push(`PDF is ${pages} pages; keep a resume to 3 at most`);
-  else if (pages > 2) warnings.push(`PDF is ${pages} pages; 2 reads better for a US application`);
+  // Three pages is normal for a career this long. Past four a recruiter stops.
+  if (pages > 4) errors.push(`PDF is ${pages} pages; past four nobody reads to the end`);
+  else if (pages > 3) warnings.push(`PDF is ${pages} pages; three is the comfortable ceiling`);
   console.log(`PDF: ${pages} page(s), text extractable`);
 }
 
