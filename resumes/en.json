@@ -1,7 +1,7 @@
 {
     "basics": {
         "name": "Nicolas Dréno",
-        "label": "Solution Architect",
+        "label": "Solution Architect & Principal Engineer",
         "email": "ndreno@gmail.com",
         "location": {
             "postalCode": "73100",
@@ -273,80 +273,136 @@
         {
             "name": "Cloud & DevOps",
             "keywords": [
-                "AWS (ECS, Fargate, Lambda, S3, CloudFront, Cognito, Kafka, Kinesis, Elasticsearch)",
-                "Azure (AKS, APIM)",
+                "AWS",
+                "Azure (AKS",
+                "APIM)",
                 "GCP",
                 "Outscale",
+                "Kubernetes (RKE2",
+                "Rancher)",
                 "Docker",
-                "Kubernetes",
+                "Helm",
+                "GitOps (ArgoCD)",
+                "OpenTofu",
                 "Terraform",
                 "Ansible",
-                "Jenkins",
-                "Git",
-                "Gitlab CI",
-                "CI/CD",
-                "Infrastructure as Code (Terraform)"
+                "Cilium",
+                "MetalLB",
+                "bare-metal provisioning (bootc)",
+                "GitLab CI",
+                "Forgejo Actions",
+                "CI/CD"
             ]
         },
         {
             "name": "API & Integration",
             "keywords": [
-                "API Design (REST, OpenAPI, Swagger)",
-                "API Management (Kong, KrakenD, Azure APIM, Gravitee, Tyk)",
+                "API Design (REST",
+                "OpenAPI",
+                "AsyncAPI",
+                "JSON Schema)",
+                "API Management (Kong",
+                "KrakenD",
+                "Azure APIM",
+                "Gravitee",
+                "Tyk)",
+                "AI gateways",
+                "Model Context Protocol (MCP)",
                 "Event-Driven Architecture",
                 "Apache Kafka",
-                "Confluent Cloud",
                 "RabbitMQ",
                 "CQRS",
-                "Event Sourcing",
-                "SOA (SOAP, JAX-WS)"
+                "Event Sourcing"
             ]
         },
         {
             "name": "Programming & Frameworks",
             "keywords": [
-                "Java",
+                "Rust",
                 "Golang",
+                "WebAssembly (WASM)",
+                "Java",
                 "Node.js",
-                "JavaScript",
-                "Spring (Boot, Core, MVC, Security, Batch)",
-                "Python (basics)",
-                "Shell/Bash",
-                "JSON Schema",
-                "OpenApi Specification (OAS)"
+                "JavaScript/TypeScript",
+                "Spring (Boot",
+                "Core",
+                "MVC",
+                "Security",
+                "Batch)",
+                "Python",
+                "Shell/Bash"
+            ]
+        },
+        {
+            "name": "AI-Augmented Engineering",
+            "keywords": [
+                "LLM coding agents (Claude Code)",
+                "machine-readable agent conventions and guardrails",
+                "spec-driven development",
+                "ADR and LLD driven design",
+                "context engineering",
+                "schema as code",
+                "on-device inference"
             ]
         },
         {
             "name": "Identity & Access Management (IAM)",
             "keywords": [
-                "OAuth2.0",
+                "OAuth 2.0",
                 "OpenID Connect (OIDC)",
                 "SAML",
                 "LDAP",
-                "Open Policy Agent (OPA)",
-                "OpenAM/OpenDJ",
-                "LDAP"
+                "Keycloak",
+                "OpenBao",
+                "External Secrets Operator",
+                "PKI and certificate management",
+                "Open Policy Agent (OPA/Rego)"
+            ]
+        },
+        {
+            "name": "Observability & Supply Chain Security",
+            "keywords": [
+                "OpenTelemetry",
+                "Prometheus",
+                "Grafana",
+                "SLO and error budgets",
+                "SBOM (syft)",
+                "keyless signing (cosign)",
+                "dependency and licence auditing (cargo-deny)",
+                "secret scanning (gitleaks)",
+                "Kubernetes admission control"
             ]
         },
         {
             "name": "Databases",
             "keywords": [
-                "SQL (MySQL, PostgreSQL, MariaDB, Oracle)",
-                "NoSQL (MongoDB, DynamoDB, Elasticsearch)",
-                "NewSQL (CockroachDB, ArangoDB)",
-                "Grap (MemGraph)"
+                "SQL (PostgreSQL",
+                "MySQL",
+                "MariaDB",
+                "Oracle)",
+                "NoSQL (MongoDB",
+                "DynamoDB",
+                "Elasticsearch)",
+                "NewSQL (CockroachDB",
+                "ArangoDB)",
+                "Graph (MemGraph)"
             ]
         },
         {
             "name": "Methodologies & Tooling",
             "keywords": [
-                "Agile (Scrum, Kanban)",
+                "Agile (Scrum",
+                "Kanban)",
                 "Domain-Driven Design (DDD)",
-                "Jira",
+                "Enterprise Architecture (TOGAF",
+                "C4",
+                "ArchiMate)",
+                "ADR/LLD/HLD practice",
+                "NetBox",
                 "Backstage",
-                "Stoplight",
+                "Docusaurus",
                 "SonarQube",
-                "Enterprise Architect",
+                "Jira",
                 "Draw.io"
             ]
         }

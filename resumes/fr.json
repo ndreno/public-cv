@@ -278,90 +278,147 @@
                 "Urbanisation du SI",
                 "Architecture data et gouvernance de la donnée",
                 "API design & bus de messages",
-                "Conception orientée objet",
-                "Sécurité et conformité (PSSI, ISO, SecNumCloud, DevSecOps)",
+                "Sécurité et conformité (PSSI",
+                "ISO",
+                "SecNumCloud",
+                "DevSecOps)",
                 "Scalabilité (FinOps) et maintenabilité applicative"
             ]
         },
         {
             "name": "Cloud & DevOps",
             "keywords": [
-                "AWS (ECS, Fargate, Lambda, S3, CloudFront, Cognito, Kafka, Kinesis, Elasticsearch)",
-                "Azure (AKS, APIM)",
+                "AWS",
+                "Azure (AKS",
+                "APIM)",
                 "GCP",
                 "Outscale",
+                "Kubernetes (RKE2",
+                "Rancher)",
                 "Docker",
-                "Kubernetes",
+                "Helm",
+                "GitOps (ArgoCD)",
+                "OpenTofu",
                 "Terraform",
                 "Ansible",
-                "Jenkins",
-                "Git",
-                "Gitlab CI",
-                "CI/CD",
-                "Infrastructure as Code (Terraform)"
+                "Cilium",
+                "MetalLB",
+                "provisioning bare metal (bootc)",
+                "GitLab CI",
+                "Forgejo Actions",
+                "CI/CD"
             ]
         },
         {
             "name": "API & Intégration",
             "keywords": [
-                "Conception d'API (REST, OpenAPI, Swagger)",
-                "Gestion d'API (Kong, KrakenD, Azure APIM, Gravitee, Tyk)",
+                "Conception d'API (REST",
+                "OpenAPI",
+                "AsyncAPI",
+                "JSON Schema)",
+                "Gestion d'API (Kong",
+                "KrakenD",
+                "Azure APIM",
+                "Gravitee",
+                "Tyk)",
+                "Gateways IA",
+                "Model Context Protocol (MCP)",
                 "Architecture orientée événements",
                 "Apache Kafka",
-                "Confluent Cloud",
                 "RabbitMQ",
                 "CQRS",
-                "Event Sourcing",
-                "SOA (SOAP, JAX-WS)"
+                "Event Sourcing"
             ]
         },
         {
             "name": "Programmation & Frameworks",
             "keywords": [
-                "Java",
+                "Rust",
                 "Golang",
+                "WebAssembly (WASM)",
+                "Java",
                 "Node.js",
-                "JavaScript",
-                "Spring (Boot, Core, MVC, Security, Batch)",
-                "Python (bases)",
-                "Shell/Bash",
-                "JSON Schema",
-                "OpenAPI Specification (OAS)"
+                "JavaScript/TypeScript",
+                "Spring (Boot",
+                "Core",
+                "MVC",
+                "Security",
+                "Batch)",
+                "Python",
+                "Shell/Bash"
+            ]
+        },
+        {
+            "name": "Ingénierie augmentée par l'IA",
+            "keywords": [
+                "Agents de code LLM (Claude Code)",
+                "conventions et garde-fous lisibles par la machine",
+                "développement spec-driven",
+                "conception pilotée par ADR et LLD",
+                "context engineering",
+                "schema as code",
+                "inférence locale on-device"
             ]
         },
         {
             "name": "Gestion des Identités et Accès (IAM)",
             "keywords": [
-                "OAuth2.0",
+                "OAuth 2.0",
                 "OpenID Connect (OIDC)",
                 "SAML",
                 "LDAP",
-                "Open Policy Agent (OPA)",
-                "OpenAM/OpenDJ"
+                "Keycloak",
+                "OpenBao",
+                "External Secrets Operator",
+                "PKI et gestion de certificats",
+                "Open Policy Agent (OPA/Rego)"
+            ]
+        },
+        {
+            "name": "Observabilité & Sécurité de la chaîne logicielle",
+            "keywords": [
+                "OpenTelemetry",
+                "Prometheus",
+                "Grafana",
+                "SLO et error budgets",
+                "SBOM (syft)",
+                "signature keyless (cosign)",
+                "audit de dépendances et de licences (cargo-deny)",
+                "détection de secrets (gitleaks)",
+                "admission control Kubernetes"
             ]
         },
         {
             "name": "Bases de Données",
             "keywords": [
-                "SQL (MySQL, PostgreSQL, MariaDB, Oracle)",
-                "NoSQL (MongoDB, DynamoDB, Elasticsearch)",
-                "NewSQL (CockroachDB, ArangoDB)",
+                "SQL (PostgreSQL",
+                "MySQL",
+                "MariaDB",
+                "Oracle)",
+                "NoSQL (MongoDB",
+                "DynamoDB",
+                "Elasticsearch)",
+                "NewSQL (CockroachDB",
+                "ArangoDB)",
                 "Graph (MemGraph)"
             ]
         },
         {
             "name": "Méthodologies & Outils",
             "keywords": [
-                "Agile (Scrum, Kanban)",
+                "Agile (Scrum",
+                "Kanban)",
                 "Domain-Driven Design (DDD)",
-                "Architecture d'entreprise (TOGAF, C4 Model)",
-                "Jira",
+                "Architecture d'entreprise (TOGAF",
+                "C4",
+                "ArchiMate)",
+                "pratique ADR/LLD/HLD",
+                "NetBox",
                 "Backstage",
-                "Stoplight",
+                "Docusaurus",
                 "SonarQube",
-                "Enterprise Architect",
-                "Draw.io",
-                "Archimate"
+                "Jira",
+                "Draw.io"
             ]
         }
     ],
