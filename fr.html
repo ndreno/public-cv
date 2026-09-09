@@ -376,23 +376,29 @@ ul.technologies li {
 			
 						<h4>HIGHLIGHTS</h4>
 						<ul class="highlights">
-							<li>Pilotage de l&#x27;architecture cible sur les domaines datacentre, réseau, plateforme Kubernetes, IAM, observabilité et cybersécurité.</li>
-							<li>Rédaction du corpus d&#x27;architecture sous forme de documents gouvernés et relus : 85 ADR, 9 LLD et le HLD, versionnés dans Git et validés en CI.</li>
-							<li>Mise en place d&#x27;une méthode de delivery spec-driven et augmentée par l&#x27;IA : conventions lisibles par les agents, contrôles bloquants, et templates de golden path partagés entre les repos de la plateforme.</li>
-							<li>Conception de la donnée d&#x27;infrastructure as code, avec NetBox comme source de vérité CMDB réconciliée par OpenTofu et détection de dérive en continu.</li>
+							<li>Lead architect de l&#x27;architecture cible sur les domaines réseau, datacentre, cloud, plateforme de conteneurs, IAM, PKI, software factory, observabilité et cybersécurité.</li>
+							<li>Mise en place des décisions d&#x27;architecture comme artefacts gouvernés et relus : ADR, LLD et HLD versionnés dans Git, référencés entre eux, et validés en CI au même titre que le code qu&#x27;ils gouvernent.</li>
+							<li>Conception et bootstrap de la plateforme de conteneurs sur bare metal, du premier cluster au provisioning des nœuds de charge : RKE2 et Rancher, réconciliation GitOps avec ArgoCD, réseau Cilium et MetalLB.</li>
+							<li>Donnée d&#x27;infrastructure faisant autorité as code, avec NetBox comme source de vérité CMDB réconciliée par OpenTofu, un plan publié sur chaque pull request et une détection de dérive planifiée.</li>
+							<li>Politique d&#x27;accès réseau as code, avec un contrôle bloquant qui échoue dès que le périmètre déclaré et le périmètre réellement appliqué divergent.</li>
+							<li>Réalisation d&#x27;un opérateur Kubernetes qui provisionne les tenants S3 StorageGRID, leurs buckets et leurs credentials depuis des ressources custom, en remplacement des actions manuelles dans la console de l&#x27;éditeur.</li>
+							<li>Construction de la software factory de la plateforme (Forgejo auto-hébergé, registry, portail de documentation, SSO Keycloak, runners de CI) avec des templates de golden path, des linters partagés et des conventions lisibles par la machine, pour que les agents de code travaillent sous les mêmes contrôles bloquants que l&#x27;équipe.</li>
 						</ul>
 			
 						<h4>TECHNOLOGIES</h4>
 						<ul class="technologies">
-							<li>Kubernetes</li>
+							<li>RKE2</li>
+							<li>Rancher</li>
+							<li>ArgoCD</li>
+							<li>Cilium</li>
 							<li>OpenTofu</li>
 							<li>NetBox</li>
-							<li>Cilium</li>
-							<li>ArgoCD</li>
-							<li>Ansible</li>
 							<li>Keycloak</li>
+							<li>OpenBao</li>
+							<li>OpenTelemetry</li>
+							<li>Go</li>
+							<li>Ansible</li>
 							<li>Forgejo</li>
-							<li>Docusaurus</li>
 						</ul>
 					</div>
 					<div class="job">

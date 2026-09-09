@@ -33,21 +33,27 @@
             "startDate": "2026-01",
             "summary": "Architecte consultant, actuellement lead architect sur le programme Magellan, une plateforme d'infrastructure et d'applications d'entreprise.",
             "highlights": [
-                "Pilotage de l'architecture cible sur les domaines datacentre, réseau, plateforme Kubernetes, IAM, observabilité et cybersécurité.",
-                "Rédaction du corpus d'architecture sous forme de documents gouvernés et relus : 85 ADR, 9 LLD et le HLD, versionnés dans Git et validés en CI.",
-                "Mise en place d'une méthode de delivery spec-driven et augmentée par l'IA : conventions lisibles par les agents, contrôles bloquants, et templates de golden path partagés entre les repos de la plateforme.",
-                "Conception de la donnée d'infrastructure as code, avec NetBox comme source de vérité CMDB réconciliée par OpenTofu et détection de dérive en continu."
+                "Lead architect de l'architecture cible sur les domaines réseau, datacentre, cloud, plateforme de conteneurs, IAM, PKI, software factory, observabilité et cybersécurité.",
+                "Mise en place des décisions d'architecture comme artefacts gouvernés et relus : ADR, LLD et HLD versionnés dans Git, référencés entre eux, et validés en CI au même titre que le code qu'ils gouvernent.",
+                "Conception et bootstrap de la plateforme de conteneurs sur bare metal, du premier cluster au provisioning des nœuds de charge : RKE2 et Rancher, réconciliation GitOps avec ArgoCD, réseau Cilium et MetalLB.",
+                "Donnée d'infrastructure faisant autorité as code, avec NetBox comme source de vérité CMDB réconciliée par OpenTofu, un plan publié sur chaque pull request et une détection de dérive planifiée.",
+                "Politique d'accès réseau as code, avec un contrôle bloquant qui échoue dès que le périmètre déclaré et le périmètre réellement appliqué divergent.",
+                "Réalisation d'un opérateur Kubernetes qui provisionne les tenants S3 StorageGRID, leurs buckets et leurs credentials depuis des ressources custom, en remplacement des actions manuelles dans la console de l'éditeur.",
+                "Construction de la software factory de la plateforme (Forgejo auto-hébergé, registry, portail de documentation, SSO Keycloak, runners de CI) avec des templates de golden path, des linters partagés et des conventions lisibles par la machine, pour que les agents de code travaillent sous les mêmes contrôles bloquants que l'équipe."
             ],
             "technologies": [
-                "Kubernetes",
+                "RKE2",
+                "Rancher",
+                "ArgoCD",
+                "Cilium",
                 "OpenTofu",
                 "NetBox",
-                "Cilium",
-                "ArgoCD",
-                "Ansible",
                 "Keycloak",
-                "Forgejo",
-                "Docusaurus"
+                "OpenBao",
+                "OpenTelemetry",
+                "Go",
+                "Ansible",
+                "Forgejo"
             ]
         },
         {

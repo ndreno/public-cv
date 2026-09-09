@@ -376,23 +376,29 @@ ul.technologies li {
 			
 						<h4>HIGHLIGHTS</h4>
 						<ul class="highlights">
-							<li>Leading the target architecture across datacentre, network, Kubernetes platform, IAM, observability and cybersecurity domains.</li>
-							<li>Authoring the architecture corpus as governed, reviewable documents: 85 ADRs, 9 LLDs and the HLD, versioned in Git and validated in CI.</li>
-							<li>Establishing a spec-driven, AI-augmented delivery method: machine-readable conventions for agents, blocking quality gates, and golden-path templates shared across the platform repositories.</li>
-							<li>Designing infrastructure data as code, with NetBox as the CMDB source of truth reconciled by OpenTofu and continuous drift detection.</li>
+							<li>Lead architect of the target architecture across the network, datacentre, cloud, container platform, IAM, PKI, software factory, observability and cybersecurity domains.</li>
+							<li>Established architecture decisions as governed, reviewable artifacts: ADRs, LLDs and the HLD versioned in Git, cross-referenced, and validated in CI alongside the code they govern.</li>
+							<li>Designed and bootstrapped the container platform on bare metal, from the first cluster to workload node provisioning: RKE2 and Rancher, GitOps reconciliation with ArgoCD, Cilium networking and MetalLB.</li>
+							<li>Made infrastructure data authoritative as code, with NetBox as the CMDB source of truth reconciled by OpenTofu, a plan published on every pull request, and scheduled drift detection.</li>
+							<li>Delivered network access policy as code, with a pipeline gate that fails when the declared perimeter and the enforced one diverge.</li>
+							<li>Shipped a Kubernetes operator that provisions StorageGRID S3 tenants, buckets and credentials from custom resources, replacing manual operations in the vendor console.</li>
+							<li>Built the platform&#x27;s own software factory (self-hosted Forgejo, registry, documentation portal, Keycloak SSO, CI runners) with golden-path templates, shared linters and machine-readable conventions, so that coding agents work under the same blocking gates as the team.</li>
 						</ul>
 			
 						<h4>TECHNOLOGIES</h4>
 						<ul class="technologies">
-							<li>Kubernetes</li>
+							<li>RKE2</li>
+							<li>Rancher</li>
+							<li>ArgoCD</li>
+							<li>Cilium</li>
 							<li>OpenTofu</li>
 							<li>NetBox</li>
-							<li>Cilium</li>
-							<li>ArgoCD</li>
-							<li>Ansible</li>
 							<li>Keycloak</li>
+							<li>OpenBao</li>
+							<li>OpenTelemetry</li>
+							<li>Go</li>
+							<li>Ansible</li>
 							<li>Forgejo</li>
-							<li>Docusaurus</li>
 						</ul>
 					</div>
 					<div class="job">
