@@ -1,0 +1,69 @@
+{
+    "company": "Anthropic",
+    "title": "Senior Staff Software Engineer, API",
+    "url": "https://www.linkedin.com/jobs/view/4377646060/",
+    "location": "San Francisco, CA (hybrid)",
+    "must_have": [
+        "API",
+        "distributed systems",
+        "architecture",
+        "Python",
+        "Go",
+        "Rust",
+        "Kubernetes",
+        "PostgreSQL",
+        "technical strategy",
+        "mentor"
+    ],
+    "nice_to_have": [
+        "GCP",
+        "AWS",
+        "Azure",
+        "Prometheus",
+        "Grafana",
+        "OpenAPI",
+        "gateway",
+        "authentication",
+        "authorisation",
+        "observability",
+        "Staff",
+        "Principal",
+        "Claude",
+        "platform",
+        "cross-functional",
+        "design document"
+    ],
+    "synonyms": {
+        "Go": [
+            "Golang"
+        ],
+        "Kubernetes": [
+            "K8s"
+        ],
+        "PostgreSQL": [
+            "Postgres"
+        ],
+        "authorisation": [
+            "authorization",
+            "authz"
+        ],
+        "authentication": [
+            "authn"
+        ],
+        "distributed systems": [
+            "distributed system"
+        ],
+        "technical strategy": [
+            "technical strategies"
+        ],
+        "design document": [
+            "design documents",
+            "ADR",
+            "LLD",
+            "HLD"
+        ],
+        "observability": [
+            "OpenTelemetry"
+        ]
+    }
+}

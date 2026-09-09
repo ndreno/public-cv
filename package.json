@@ -4,7 +4,9 @@
     "description": "Generates HTML resumes from JSON files.",
     "scripts": {
         "build:en": "mkdir -p build && cp resumes/index.html build/index.html && cp -r resumes/logos build/logos && cp resumes/en.json build/resume.json && resume export build/en.html --format html --theme jsonresume-theme-cora --resume resumes/en.json",
-        "build:fr": "mkdir -p build && cp resumes/index.html build/index.html && cp -r resumes/logos build/logos && cp resumes/fr.json build/resume.json && resume export build/fr.html --format html --theme jsonresume-theme-cora --resume resumes/fr.json"
+        "build:fr": "mkdir -p build && cp resumes/index.html build/index.html && cp -r resumes/logos build/logos && cp resumes/fr.json build/resume.json && resume export build/fr.html --format html --theme jsonresume-theme-cora --resume resumes/fr.json",
+        "build:pdf": "node scripts/build-pdf.mjs resumes/us.json build/us.pdf",
+        "ats": "node scripts/ats-check.mjs resumes/us.json jobs/anthropic-senior-staff-api.json build/us.pdf"
     },
     "dependencies": {
         "jsonresume-theme-cora": "github:ndreno/jsonresume-theme-cora",

@@ -1,0 +1,267 @@
+{
+    "basics": {
+        "name": "Nicolas Dréno",
+        "label": "Principal Engineer / API & Platform Architect",
+        "email": "ndreno@gmail.com",
+        "location": {
+            "city": "Aix-les-Bains",
+            "country": "France"
+        },
+        "profiles": [
+            {
+                "network": "LinkedIn",
+                "username": "nicolasdreno",
+                "url": "https://www.linkedin.com/in/nicolasdreno"
+            },
+            {
+                "network": "GitHub",
+                "username": "ndreno",
+                "url": "https://github.com/ndreno"
+            }
+        ],
+        "summary": "API and distributed systems engineer who designs the contract and then ships it. I have built an API gateway twice: once in Go for a sovereign cloud provider, including its authentication and authorisation layer, and once in Rust as Barbacane, an open source API and AI gateway where OpenAPI and AsyncAPI specifications are the only configuration. I work with LLM coding agents daily under a method I call intentional engineering: intent written before the code, and blocking gates that verify it. Open to relocation to the San Francisco Bay Area or New York."
+    },
+    "work": [
+        {
+            "company": "Gluendo",
+            "position": "Lead Architect",
+            "location": "France",
+            "logo": "./logos/gluendo_logo.png",
+            "startDate": "2026-01",
+            "summary": "Consulting architect, currently lead architect on the Magellan programme, an enterprise infrastructure and application platform.",
+            "highlights": [
+                "Lead architect for an enterprise platform spanning network, datacentre, cloud, container platform, IAM, PKI, observability and cybersecurity.",
+                "Own the technical strategy and the design documents behind it: ADRs, LLDs and the HLD, reviewed in Git and validated in CI.",
+                "Designed and bootstrapped the container platform on bare metal: RKE2 and Rancher, GitOps reconciliation with ArgoCD, Cilium and MetalLB.",
+                "Shipped a Kubernetes operator in Go provisioning S3 tenants, buckets and credentials from custom resources.",
+                "Introduced a spec-driven method where coding agents run under the same blocking gates as the team."
+            ],
+            "technologies": [
+                "RKE2",
+                "Rancher",
+                "ArgoCD",
+                "Cilium",
+                "OpenTofu",
+                "NetBox",
+                "Keycloak",
+                "OpenBao",
+                "OpenTelemetry",
+                "Go",
+                "Ansible",
+                "Forgejo"
+            ]
+        },
+        {
+            "company": "NumSpot",
+            "position": "API Architect / Staff Engineer",
+            "location": "France",
+            "logo": "./logos/numspot_logo.jpeg",
+            "startDate": "2023-11",
+            "endDate": "2025-12",
+            "summary": "Leading architectural strategies and innovations for a Sovereign Cloud provider, with a focus on open-source solutions and cloud-native services.",
+            "highlights": [
+                "Defined the API standard and moved the engineering teams to contract-first design, with the OpenAPI specification as the source of truth.",
+                "Designed and built the API gateway in Go, including the full authentication and authorisation layer.",
+                "Set the modular, secure target architecture for cloud-native and PaaS offerings, and contributed to SecNumCloud qualification."
+            ],
+            "technologies": [
+                "Golang",
+                "OpenAPI (OAS)",
+                "Kubernetes",
+                "Terraform",
+                "Scalar",
+                "pb33f",
+                "Docusaurus",
+                "GitLab"
+            ]
+        },
+        {
+            "company": "Back Market",
+            "position": "Senior API Architect",
+            "location": "France",
+            "logo": "./logos/back_market_logo.jpeg",
+            "startDate": "2022-09",
+            "endDate": "2023-11",
+            "summary": "Shaped the API strategy, architecture, and community practices for a fast-growing e-commerce platform, driving API-first initiatives and modernising the technical ecosystem.",
+            "highlights": [
+                "Owned the transversal API technical strategy for a fast-growing e-commerce platform, led the API chapter and mentored engineers on API-first design and DDD.",
+                "Architected a three-layered API strategy across experience, process and system tiers, on a Python and Django codebase with Go services.",
+                "Modernised the API management and developer portal tooling."
+            ],
+            "technologies": [
+                "Python",
+                "Django",
+                "Golang",
+                "AWS",
+                "GCP",
+                "Node.js",
+                "GitHub",
+                "KrakenD",
+                "Spotlight",
+                "Backstage",
+                "Docker",
+                "Excalidraw",
+                "Jira"
+            ]
+        },
+        {
+            "company": "The Warehouse Group",
+            "position": "Solutions Architect",
+            "location": "Auckland, NZ",
+            "logo": "./logos/the_warehouse_group_logo.jpeg",
+            "startDate": "2021-05",
+            "endDate": "2022-06",
+            "summary": "Delivered scalable integration and streaming solutions, modernised API management, and drove DevOps initiatives for a leading retail group.",
+            "highlights": [
+                "Built the core integration for a Master Data Management platform with cross-functional teams: Confluent Kafka, AKS and Spring Boot microservices.",
+                "Enhanced the API management platform and drove DevOps adoption for a leading retail group."
+            ],
+            "technologies": [
+                "Java",
+                "JavaScript",
+                "Azure",
+                "Swagger",
+                "Backstage",
+                "Atlassian",
+                "Json-schema"
+            ]
+        },
+        {
+            "company": "University of Auckland",
+            "position": "Digital Solution Architect",
+            "location": "Auckland, NZ",
+            "logo": "./logos/the_university_of_auckland_logo.jpeg",
+            "startDate": "2018-10",
+            "endDate": "2021-05",
+            "summary": "Modernised digital platforms and integration solutions for New Zealand's leading university, leveraging cloud-native technologies and advanced analytics.",
+            "highlights": [
+                "Digital solution architect for the university's integration and API landscape."
+            ]
+        },
+        {
+            "company": "Earlier roles",
+            "position": "Digital Architect, Software Architect, Software Engineer",
+            "location": "France",
+            "startDate": "2008-04",
+            "endDate": "2018-10",
+            "summary": "ENGIE B2C, French Ministry of Labour, Caisse des Depots et Consignations, Restopolitan. Java and Spring platforms, SOA integration, and the move to API-first architectures."
+        }
+    ],
+    "projects": [
+        {
+            "name": "Barbacane",
+            "roles": [
+                "Founder & CTO"
+            ],
+            "logo": "./logos/barbacane_logo.png",
+            "startDate": "2026-01",
+            "url": "https://github.com/barbacane-dev/barbacane",
+            "description": "Building an open source API and bidirectional AI gateway in Rust, where OpenAPI and AsyncAPI specifications are the only configuration.",
+            "highlights": [
+                "Designed the spec-driven model: specifications are compiled into artifacts and enforced as contracts at runtime, with no proprietary DSL.",
+                "Built the WebAssembly plugin runtime and its SDK, separating control plane from data plane."
+            ],
+            "keywords": [
+                "Rust",
+                "WebAssembly",
+                "OpenAPI",
+                "AsyncAPI",
+                "PostgreSQL"
+            ]
+        }
+    ],
+    "education": [
+        {
+            "institution": "ENSEIRB-MATMECA",
+            "area": "Network Infrastructure and Software Engineering",
+            "studyType": "Master's Degree"
+        }
+    ],
+    "skills": [
+        {
+            "name": "API & Integration",
+            "keywords": [
+                "API design (REST, OpenAPI, AsyncAPI, JSON Schema)",
+                "API management (Kong, KrakenD, Azure APIM, Gravitee, Tyk)",
+                "AI gateways",
+                "Model Context Protocol (MCP)",
+                "Event-driven architecture",
+                "Apache Kafka"
+            ]
+        },
+        {
+            "name": "Programming & Frameworks",
+            "keywords": [
+                "Python (Django)",
+                "Rust",
+                "Golang",
+                "WebAssembly (WASM)",
+                "Node.js",
+                "JavaScript/TypeScript"
+            ]
+        },
+        {
+            "name": "Cloud & DevOps",
+            "keywords": [
+                "AWS",
+                "Azure (AKS, APIM)",
+                "GCP",
+                "Kubernetes (RKE2, Rancher)",
+                "Docker",
+                "GitOps (ArgoCD)",
+                "OpenTofu",
+                "Ansible",
+                "GitLab CI",
+                "CI/CD"
+            ]
+        },
+        {
+            "name": "AI-Augmented Engineering",
+            "keywords": [
+                "LLM coding agents (Claude Code)",
+                "Machine-readable agent conventions and guardrails",
+                "Spec-driven development",
+                "ADR and LLD driven design",
+                "Context engineering",
+                "Schema as code",
+                "On-device inference"
+            ]
+        },
+        {
+            "name": "Observability & Supply Chain Security",
+            "keywords": [
+                "OpenTelemetry",
+                "Prometheus",
+                "Grafana",
+                "SLO and error budgets",
+                "SBOM (syft)",
+                "Keyless signing (cosign)",
+                "Dependency and licence auditing (cargo-deny)"
+            ]
+        }
+    ],
+    "languages": [
+        {
+            "language": "🇫🇷 French",
+            "level": "Native"
+        },
+        {
+            "language": "🇬🇧 English",
+            "level": "Fluent"
+        }
+    ],
+    "certifications": [
+        {
+            "title": "AWS Solution Architect - Associate",
+            "certificationer": "Amazon Web Services",
+            "date": "2024-03",
+            "credentialUrl": "https://cp.certmetrics.com/amazon/en/public/verify/credential/EKLHKMM1JERE1NS0"
+        },
+        {
+            "title": "Professional Scrum Developer",
+            "certificationer": "Scrum.org",
+            "date": "2015-01",
+            "credentialUrl": "https://www.scrum.org/user/153014"
+        }
+    ]
+}

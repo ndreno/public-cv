@@ -1,0 +1,50 @@
+name: ATS check
+
+# The US resume is not published: it is rendered to PDF and checked here, then
+# attached to applications by hand. This workflow deliberately does not deploy.
+
+on:
+  push:
+    branches: [main]
+    paths: ['resumes/**', 'jobs/**', 'scripts/**', 'typst/**', '.github/workflows/ats.yml']
+  pull_request:
+    paths: ['resumes/**', 'jobs/**', 'scripts/**', 'typst/**']
+
+env:
+  TYPST_VERSION: v0.14.2
+
+jobs:
+  ats:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      - name: Install Typst
+        run: |
+          curl -fsSL "https://github.com/typst/typst/releases/download/${TYPST_VERSION}/typst-x86_64-unknown-linux-musl.tar.xz" \
+            | tar -xJ --strip-components=1 -C /usr/local/bin typst-x86_64-unknown-linux-musl/typst
+          typst --version
+
+      - name: Render the US resume
+        run: npm run build:pdf
+
+      - name: Check every open application
+        run: |
+          status=0
+          for job in jobs/*.json; do
+            echo "::group::$job"
+            node scripts/ats-check.mjs resumes/us.json "$job" build/us.pdf || status=1
+            echo "::endgroup::"
+          done
+          exit $status
+
+      - name: Keep the rendered PDF as an artifact
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: resume-us-pdf
+          path: build/us.pdf
