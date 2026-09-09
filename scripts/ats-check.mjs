@@ -79,12 +79,23 @@ console.log(`Prose: ${words} words`);
 // --- PDF sanity ------------------------------------------------------------
 if (pdfPath && existsSync(pdfPath)) {
   const pdf = readFileSync(pdfPath);
-  const pages = (pdf.toString("latin1").match(/\/Type\s*\/Page[^s]/g) ?? []).length;
+  const raw = pdf.toString("latin1");
+  const pages = (raw.match(/\/Type\s*\/Page[^s]/g) ?? []).length;
   if (!pdf.includes("/Font")) errors.push("the PDF embeds no font, so its text is not extractable");
   // Small images are how a renderer draws transparency and rounded corners, and
   // carry no text. Only a large one (a logo, a banner, a scanned page) hides
   // content from a parser.
-  const big = [...pdf.toString("latin1").matchAll(/\/Subtype\s*\/Image[\s\S]{0,200}?\/Width\s+(\d+)[\s\S]{0,80}?\/Height\s+(\d+)/g)]
+  // Checking the JSON is not enough: a template can silently drop a field. Link
+  // annotations store plain URIs, so what actually reached the page is readable.
+  const uris = new Set([...raw.matchAll(/\/URI\s*\((.*?)\)/g)].map((m) => m[1]));
+  if (b.email && ![...uris].some((u) => u.includes(b.email)))
+    errors.push(`the email is in the JSON but not on the page; nobody can reply to this resume`);
+  for (const prof of b.profiles ?? []) {
+    if (prof.url && !uris.has(prof.url))
+      errors.push(`${prof.network} link missing from the PDF`);
+  }
+
+  const big = [...raw.matchAll(/\/Subtype\s*\/Image[\s\S]{0,200}?\/Width\s+(\d+)[\s\S]{0,80}?\/Height\s+(\d+)/g)]
     .filter(([, w, h]) => Number(w) > 600 || Number(h) > 600);
   if (big.length) warnings.push(`${big.length} large image(s) in the PDF; a parser reads no text inside them`);
   if (pages > 3) errors.push(`PDF is ${pages} pages; keep a resume to 3 at most`);

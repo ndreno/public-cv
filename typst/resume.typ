@@ -176,6 +176,29 @@
       text(size: 9pt, fill: color-gray, parts.join("  ·  "))
     }
   }
+
+  // Contact line. A recruiter has to be able to reach the candidate, and a
+  // parser looks for the address and the profile URLs as real links.
+  {
+    let contacts = ()
+    if "email" in basics and basics.email != "" {
+      contacts.push(link("mailto:" + basics.email)[#basics.email])
+    }
+    if "phone" in basics and basics.phone != "" {
+      contacts.push(basics.phone)
+    }
+    for prof in basics.at("profiles", default: ()) {
+      let url = prof.at("url", default: "")
+      if url != "" {
+        contacts.push(link(url)[#prof.at("network", default: url)])
+      }
+    }
+    if contacts.len() > 0 {
+      linebreak()
+      v(3pt)
+      text(size: 9pt, contacts.join(text(fill: color-gray)[  ·  ]))
+    }
+  }
 })
 #v(4pt)
 #line(length: 100%, stroke: 1pt + lavender)
