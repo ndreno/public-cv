@@ -383,6 +383,10 @@ ul.technologies li {
 							<li>Politique d&#x27;accès réseau as code, avec un contrôle bloquant qui échoue dès que le périmètre déclaré et le périmètre réellement appliqué divergent.</li>
 							<li>Réalisation d&#x27;un opérateur Kubernetes qui provisionne les tenants S3 StorageGRID, leurs buckets et leurs credentials depuis des ressources custom, en remplacement des actions manuelles dans la console de l&#x27;éditeur.</li>
 							<li>Construction de la software factory de la plateforme (Forgejo auto-hébergé, registry, portail de documentation, SSO Keycloak, runners de CI) avec des templates de golden path, des linters partagés et des conventions lisibles par la machine, pour que les agents de code travaillent sous les mêmes contrôles bloquants que l&#x27;équipe.</li>
+							<li>Réalisation d&#x27;un opérateur Kubernetes en Go qui pilote le cycle de vie des serveurs physiques depuis NetBox via Metal3 et Ironic (installation, réinstallation, retrait), avec dry run et validation explicite des actions destructives.</li>
+							<li>Passage du cluster de management lui-même en GitOps, avec revue obligatoire et contrôles policy-as-code (OPA) qui protègent les ressources à état.</li>
+							<li>Socle de sécurité de la plateforme : OpenBao en haute disponibilité (PKI, secrets distribués par External Secrets), SSO Entra ID via Keycloak sur l&#x27;ensemble des outils, bastion Warpgate.</li>
+							<li>Contributions open source : OpenStack Ironic et Metal3 (vérification des firmwares), Warpgate, providers OpenTofu NetBox et Warpgate.</li>
 						</ul>
 			
 						<h4>TECHNOLOGIES</h4>
@@ -399,6 +403,9 @@ ul.technologies li {
 							<li>Go</li>
 							<li>Ansible</li>
 							<li>Forgejo</li>
+							<li>Metal3</li>
+							<li>Ironic</li>
+							<li>Warpgate</li>
 						</ul>
 					</div>
 					<div class="job">

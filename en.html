@@ -383,6 +383,10 @@ ul.technologies li {
 							<li>Delivered network access policy as code, with a pipeline gate that fails when the declared perimeter and the enforced one diverge.</li>
 							<li>Shipped a Kubernetes operator that provisions StorageGRID S3 tenants, buckets and credentials from custom resources, replacing manual operations in the vendor console.</li>
 							<li>Built the platform&#x27;s own software factory (self-hosted Forgejo, registry, documentation portal, Keycloak SSO, CI runners) with golden-path templates, shared linters and machine-readable conventions, so that coding agents work under the same blocking gates as the team.</li>
+							<li>Built a Go Kubernetes operator that drives the lifecycle of physical servers from NetBox through Metal3 and Ironic (install, reinstall, retire), with a dry run and explicit approval of destructive changes.</li>
+							<li>Moved the management cluster itself under GitOps, with mandatory review and policy-as-code (OPA) checks that protect stateful resources.</li>
+							<li>Platform security foundations: highly available OpenBao (PKI, secrets delivered by External Secrets), Entra ID SSO through Keycloak across every tool, Warpgate bastion.</li>
+							<li>Open source contributions: OpenStack Ironic and Metal3 (firmware verification), Warpgate, and the NetBox and Warpgate OpenTofu providers.</li>
 						</ul>
 			
 						<h4>TECHNOLOGIES</h4>
@@ -399,6 +403,9 @@ ul.technologies li {
 							<li>Go</li>
 							<li>Ansible</li>
 							<li>Forgejo</li>
+							<li>Metal3</li>
+							<li>Ironic</li>
+							<li>Warpgate</li>
 						</ul>
 					</div>
 					<div class="job">
