@@ -39,7 +39,11 @@
                 "Made infrastructure data authoritative as code, with NetBox as the CMDB source of truth reconciled by OpenTofu, a plan published on every pull request, and scheduled drift detection.",
                 "Delivered network access policy as code, with a pipeline gate that fails when the declared perimeter and the enforced one diverge.",
                 "Shipped a Kubernetes operator that provisions StorageGRID S3 tenants, buckets and credentials from custom resources, replacing manual operations in the vendor console.",
-                "Built the platform's own software factory (self-hosted Forgejo, registry, documentation portal, Keycloak SSO, CI runners) with golden-path templates, shared linters and machine-readable conventions, so that coding agents work under the same blocking gates as the team."
+                "Built the platform's own software factory (self-hosted Forgejo, registry, documentation portal, Keycloak SSO, CI runners) with golden-path templates, shared linters and machine-readable conventions, so that coding agents work under the same blocking gates as the team.",
+                "Built a Go Kubernetes operator that drives the lifecycle of physical servers from NetBox through Metal3 and Ironic (install, reinstall, retire), with a dry run and explicit approval of destructive changes.",
+                "Moved the management cluster itself under GitOps, with mandatory review and policy-as-code (OPA) checks that protect stateful resources.",
+                "Platform security foundations: highly available OpenBao (PKI, secrets delivered by External Secrets), Entra ID SSO through Keycloak across every tool, Warpgate bastion.",
+                "Open source contributions: OpenStack Ironic and Metal3 (firmware verification), Warpgate, and the NetBox and Warpgate OpenTofu providers."
             ],
             "technologies": [
                 "RKE2",
@@ -53,7 +57,10 @@
                 "OpenTelemetry",
                 "Go",
                 "Ansible",
-                "Forgejo"
+                "Forgejo",
+                "Metal3",
+                "Ironic",
+                "Warpgate"
             ]
         },
         {

@@ -34,7 +34,9 @@
                 "Own the technical strategy and the design documents behind it: ADRs, LLDs and the HLD, reviewed in Git and validated in CI.",
                 "Designed and bootstrapped the container platform on bare metal: RKE2 and Rancher, GitOps reconciliation with ArgoCD, Cilium and MetalLB.",
                 "Shipped a Kubernetes operator in Go provisioning S3 tenants, buckets and credentials from custom resources.",
-                "Introduced a spec-driven method where coding agents run under the same blocking gates as the team."
+                "Introduced a spec-driven method where coding agents run under the same blocking gates as the team.",
+                "Shipped a Go operator driving the lifecycle of physical servers from NetBox through Metal3 and Ironic, with dry runs and approval gates on destructive changes.",
+                "Open source contributions to OpenStack Ironic, Metal3, Warpgate and the NetBox OpenTofu provider."
             ],
             "technologies": [
                 "RKE2",
@@ -48,7 +50,10 @@
                 "OpenTelemetry",
                 "Go",
                 "Ansible",
-                "Forgejo"
+                "Forgejo",
+                "Metal3",
+                "Ironic",
+                "Warpgate"
             ]
         },
         {
